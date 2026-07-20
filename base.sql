@@ -20,7 +20,7 @@ CREATE TABLE Client (
 CREATE TABLE Operateur (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
     libelle         TEXT NOT NULL UNIQUE,
-    date_creation   DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+    created_at      DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 );
 
 -- ---------------------------------------------
@@ -29,7 +29,9 @@ CREATE TABLE Operateur (
 CREATE TABLE Prefixe (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
     id_operateur    INTEGER NOT NULL,
-    prefixe         TEXT NOT NULL UNIQUE,
+    libelle         TEXT NOT NULL UNIQUE,
+    created_at      DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at      DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (id_operateur) REFERENCES Operateur(id) ON DELETE CASCADE
 );
 

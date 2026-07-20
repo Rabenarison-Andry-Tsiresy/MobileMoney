@@ -6,6 +6,20 @@ Examen S4 mobile money
 
 ## 0. Setup commun @Both
 
+- [x] Config `.env` (DB, base_url)
+- [x] `app/Config/Database.php` vérifié
+- [ ] `app/Config/Routes.php` : structure de base + groupes de routes
+- [ ] `BaseController` commun (helpers, réponses JSON si API)
+- [ ] Migrations générées pour **toutes** les tables (une par table, dans l'ordre des FK) :
+      - [ ] `CreateClient`
+      - [ ] `CreateOperateur`
+      - [ ] `CreatePrefixe`
+      - [ ] `CreateNumero`
+      - [ ] `CreateOperation`
+      - [ ] `CreateTarif`
+      - [ ] `CreateMouvement`
+- [ ] `php spark migrate` testé sur environnement local
+- [ ] Vérifier index / contraintes (FK, CHECK) dans les migrations (`$this->forge->addForeignKey(...)`)
 - [ ]  Config `.env` (DB, base_url)
 - [ ]  `app/Config/Database.php` vérifié
 - [ ]  `app/Config/Routes.php` : structure de base + groupes de routes
@@ -26,6 +40,35 @@ Examen S4 mobile money
 ## 1. Module Opérateur / Préfixe / Opération / Tarif @Manoina
 
 ### Database
+- [x] Migration `Operateur` (id, libelle) (@started)
+- [x] Migration `Prefixe` (id, id_operateur FK, prefixe UNIQUE)
+- [x] Migration `Operation` (id, libelle)
+- [x] Migration `Tarif` (id, id_operateur FK, id_operation FK, montant_min, montant_max, montant_frais)
+- [x] Seeder `OperationSeeder` (depot, retrait, transfert) @IA
+- [x] Seeder `OperateurSeeder` + `PrefixeSeeder` (opérateurs + préfixes de test) @IA
+- [x] Seeder `TarifSeeder` (barème de test par tranche) @IA
+
+### Modèle
+- [x] `OperateurModel` (CRUD standard)(@Started)
+- [x] `PrefixeModel` (méthode `findOperateurByPrefixe($prefixe)`)
+- [x] `OperationModel` (CRUD standard, lecture seule côté front normalement)
+- [x] `TarifModel`
+      - [x] `getTranchesByOperateurOperation($idOperateur, $idOperation)`
+      - [x] `findTarifApplicable($idOperateur, $idOperation, $montant)`
+      - [x] Validation métier : détection de chevauchement de tranches avant insert/update
+
+### Controller
+- [] `OperateurController` : `index`, `new`, `create`, `edit`, `update`, `delete`
+- [ ] `PrefixeController` : CRUD (lié à un opérateur)
+- [ ] `OperationController` : `index` (lecture), gestion libellés si besoin
+- [ ] `TarifController` :
+      - [ ] `index` (liste des tranches par opérateur/opération)
+      - [ ] `create` / `store` (avec validation anti-chevauchement)
+      - [ ] `edit` / `update`
+      - [ ] `delete`
+- [ ] `RapportController` :
+      - [ ] `gains()` → somme `montant_frais` groupée par opérateur/opération/période
+      - [ ] `comptesClients()` → liste `Numero` + solde, recherche
 
 - [ ]  Migration `Operateur` (id, libelle)
 - [ ]  Migration `Prefixe` (id, id_operateur FK, prefixe UNIQUE)
