@@ -254,3 +254,2354 @@ in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
 11 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
 12 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
 13 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 09:50:39 --> near "on": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Database/Migrations/2026-07-20-080444_CreatePrefixeTable.php(36): CodeIgniter\Database\Forge->createTable()
+ 6 SYSTEMPATH/Database/MigrationRunner.php(1014): App\Database\Migrations\CreatePrefixeTable->up()
+ 7 SYSTEMPATH/Database/MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate()
+ 8 SYSTEMPATH/Commands/Database/Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest()
+ 9 SYSTEMPATH/CLI/SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+10 SYSTEMPATH/Commands/Database/Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked()
+11 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Migrate->run()
+12 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+13 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+14 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+15 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+CRITICAL - 2026-07-20 10:02:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:02:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-07-20 10:02:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-07-20 10:02:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-07-20 10:02:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-07-20 10:33:40 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Filters/Filters.php on line 590.
+ 1 SYSTEMPATH/Filters/Filters.php(590): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/Filters/Filters.php(641): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->enableFilters()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:35:25 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Filters/Filters.php on line 590.
+ 1 SYSTEMPATH/Filters/Filters.php(590): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/Filters/Filters.php(641): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->enableFilters()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:35:36 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Filters/Filters.php on line 590.
+ 1 SYSTEMPATH/Filters/Filters.php(590): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/Filters/Filters.php(641): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->enableFilters()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:36:26 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Filters/Filters.php on line 590.
+ 1 SYSTEMPATH/Filters/Filters.php(590): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/Filters/Filters.php(641): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->enableFilters()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:38:07 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: Compte/solde]
+in SYSTEMPATH/Filters/Filters.php on line 590.
+ 1 SYSTEMPATH/Filters/Filters.php(590): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/Filters/Filters.php(641): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->enableFilters()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:38:18 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: Compte/historique]
+in SYSTEMPATH/Filters/Filters.php on line 590.
+ 1 SYSTEMPATH/Filters/Filters.php(590): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+ 2 SYSTEMPATH/Filters/Filters.php(641): CodeIgniter\Filters\Filters->enableFilter()
+ 3 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->enableFilters()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:38:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Compte/historique.php"
+[Method: GET, Route: Compte/historique]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CompteController.php(70): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CompteController->historique()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:38:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Compte/historique.php"
+[Method: GET, Route: Compte/historique]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CompteController.php(70): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CompteController->historique()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:38:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Compte/historique.php"
+[Method: GET, Route: Compte/historique]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CompteController.php(70): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CompteController->historique()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:38:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Compte/historique.php"
+[Method: GET, Route: Compte/historique]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CompteController.php(70): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CompteController->historique()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:38:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Compte/historique.php"
+[Method: GET, Route: Compte/historique]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CompteController.php(70): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CompteController->historique()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:38:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Compte/historique.php"
+[Method: GET, Route: Compte/historique]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CompteController.php(70): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CompteController->historique()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:38:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Compte/historique.php"
+[Method: GET, Route: Compte/historique]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CompteController.php(70): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CompteController->historique()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:38:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Compte/historique.php"
+[Method: GET, Route: Compte/historique]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CompteController.php(70): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CompteController->historique()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:38:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Compte/historique.php"
+[Method: GET, Route: Compte/historique]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CompteController.php(70): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CompteController->historique()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:38:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Compte/historique.php"
+[Method: GET, Route: Compte/historique]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CompteController.php(70): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CompteController->historique()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:38:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Compte/historique.php"
+[Method: GET, Route: Compte/historique]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CompteController.php(70): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CompteController->historique()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:39:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Compte/solde.php"
+[Method: GET, Route: Compte/solde]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CompteController.php(37): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CompteController->solde()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:40:02 --> no such column: updated_at
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(32): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:40:02 --> CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(32): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:40:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(32): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:40:02 --> [Caused by] SQLite3Exception: no such column: updated_at
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(32): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:43:44 --> no such column: updated_at
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(32): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:43:44 --> CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(32): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:43:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(32): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:43:44 --> [Caused by] SQLite3Exception: no such column: updated_at
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(32): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:49:36 --> no such column: updated_at
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(32): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:49:36 --> CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(32): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:49:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(32): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:49:36 --> [Caused by] SQLite3Exception: no such column: updated_at
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(32): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:50:42 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:50:42 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:50:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:50:42 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:50:45 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:50:45 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:50:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:50:45 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:50:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:50:48 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:50:48 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:50:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:50:48 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 10:52:16 --> TypeError: CodeIgniter\Database\BaseBuilder::where(): Argument #3 ($escape) must be of type ?bool, float given, called in /home/shadow2151/Documents/S4Examen/MobileMoney/system/Model.php on line 759
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseBuilder.php on line 720.
+ 1 SYSTEMPATH/Model.php(759): CodeIgniter\Database\BaseBuilder->where()
+ 2 APPPATH/Models/TarifModel.php(52): CodeIgniter\Model->__call()
+ 3 APPPATH/Controllers/TransactionController.php(47): App\Models\TarifModel->findTarifApplicable()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:54:49 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:54:49 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:54:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:54:49 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:55:58 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:55:58 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:55:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:55:58 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:56:03 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:56:03 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:56:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:56:03 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:56:08 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:56:08 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:56:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:56:08 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:56:26 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:56:26 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/retrait]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:56:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:56:26 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:58:04 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:58:04 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/retrait]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:58:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:58:04 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 10:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 10:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 10:58:11 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:58:11 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:58:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 10:58:11 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:00:49 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:00:49 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:00:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:00:49 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:00:56 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:00:56 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:00:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:00:56 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:11:49 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:11:49 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:11:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:11:49 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:12:03 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:12:03 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:12:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:12:03 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:23:23 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:23:23 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:23:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:23:23 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:24:58 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:24:58 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:24:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:24:58 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:26:21 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:26:21 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:26:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:26:21 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(33): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:33:14 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:33:14 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:33:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:33:14 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:33:32 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:33:32 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/retrait]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:33:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:33:32 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:33:56 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:33:56 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/retrait]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:33:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:33:56 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:34:33 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:34:33 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/depot]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:34:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:34:33 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(36): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(52): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireDepot()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:46:47 --> near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(34): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:46:47 --> CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+[Method: POST, Route: Transaction/retrait]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 4 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 5 APPPATH/Models/NumeroModel.php(34): CodeIgniter\Model->update()
+ 6 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:46:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 6 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 7 APPPATH/Models/NumeroModel.php(34): CodeIgniter\Model->update()
+ 8 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:46:47 --> [Caused by] SQLite3Exception: near "=": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(1074): CodeIgniter\Model->doUpdate()
+ 7 SYSTEMPATH/Model.php(709): CodeIgniter\BaseModel->update()
+ 8 APPPATH/Models/NumeroModel.php(34): CodeIgniter\Model->update()
+ 9 APPPATH/Controllers/TransactionController.php(114): App\Models\NumeroModel->updateSolde()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:58:53 --> near ")": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Models/MouvementModel.php(48): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/TransactionController.php(118): App\Models\MouvementModel->createRetrait()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:58:53 --> CodeIgniter\Database\Exceptions\DatabaseException: near ")": syntax error
+[Method: POST, Route: Transaction/retrait]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/MouvementModel.php(48): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/TransactionController.php(118): App\Models\MouvementModel->createRetrait()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:58:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near ")": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Models/MouvementModel.php(48): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/TransactionController.php(118): App\Models\MouvementModel->createRetrait()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:58:53 --> [Caused by] SQLite3Exception: near ")": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Models/MouvementModel.php(48): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/TransactionController.php(118): App\Models\MouvementModel->createRetrait()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 11:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 11:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 11:58:59 --> near ")": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Models/MouvementModel.php(48): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/TransactionController.php(118): App\Models\MouvementModel->createRetrait()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:58:59 --> CodeIgniter\Database\Exceptions\DatabaseException: near ")": syntax error
+[Method: POST, Route: Transaction/retrait]
+in SYSTEMPATH/Database/BaseConnection.php on line 865.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/MouvementModel.php(48): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/TransactionController.php(118): App\Models\MouvementModel->createRetrait()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:58:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: near ")": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 174.
+ 1 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Models/MouvementModel.php(48): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/TransactionController.php(118): App\Models\MouvementModel->createRetrait()
+ 9 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 11:58:59 --> [Caused by] SQLite3Exception: near ")": syntax error
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(899): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(668): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Models/MouvementModel.php(48): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/TransactionController.php(118): App\Models\MouvementModel->createRetrait()
+10 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\TransactionController->faireRetrait()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+DEBUG - 2026-07-20 12:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 12:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

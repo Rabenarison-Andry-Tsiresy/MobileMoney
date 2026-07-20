@@ -8,7 +8,9 @@ use App\Models\TarifModel;
 
 class TransactionController extends BaseController
 {
-   
+    // ============================================
+    // DÉPÔT
+    // ============================================
     public function depot()
     {
         $numero = session()->get('numero');
@@ -29,7 +31,7 @@ class TransactionController extends BaseController
             return redirect()->to('/Authentification/login')->with('error', 'Veuillez vous connecter');
         }
 
-        if (!$montant || $montant <= 0) {
+        if (!is_numeric($montant) || $montant <= 0) {
             return redirect()->back()->with('error', 'Montant invalide');
         }
 
@@ -40,15 +42,25 @@ class TransactionController extends BaseController
             return redirect()->to('/Authentification/login')->with('error', 'Numéro introuvable');
         }
 
+        // Calculer les frais (dépôt = gratuit)
+        $tarifModel = new TarifModel();
+        $tarif = $tarifModel->findTarifApplicable($userdata['id_operateur'], 1, $montant);
+        $frais = $tarif ? $tarif['montant_frais'] : 0;
+
         // Mettre à jour le solde
         $nouveauSolde = $userdata['solde'] + $montant;
         $numeroModel->updateSolde($numero, $nouveauSolde);
 
         // Créer le mouvement
         $mouvementModel = new MouvementModel();
-        $mouvementModel->createDepot($userdata['id'], $montant);
+        $mouvementModel->createDepot(
+            $userdata['id'],
+            $montant,
+            $frais,
+            $tarif ? $tarif['id'] : null
+        );
 
-        return redirect()->to('/solde')->with('success', 'Dépôt de ' . number_format($montant, 0, ',', ' ') . ' FCFA effectué');
+        return redirect()->to('/Compte/solde')->with('success', 'Dépôt de ' . number_format($montant, 0, ',', ' ') . ' Ar effectué');
     }
 
     // ============================================
@@ -74,7 +86,7 @@ class TransactionController extends BaseController
             return redirect()->to('/Authentification/login')->with('error', 'Veuillez vous connecter');
         }
 
-        if (!$montant || $montant <= 0) {
+        if (!is_numeric($montant) || $montant <= 0) {
             return redirect()->back()->with('error', 'Montant invalide');
         }
 
@@ -87,14 +99,14 @@ class TransactionController extends BaseController
 
         // Calculer les frais
         $tarifModel = new TarifModel();
-        $tarif = $tarifModel->findTarif($userdata['id_operateur'], 2, $montant);
+        $tarif = $tarifModel->findTarifApplicable($userdata['id_operateur'], 2, $montant);
         
         $frais = $tarif ? $tarif['montant_frais'] : 0;
         $montantTotal = $montant + $frais;
 
         // Vérifier le solde
         if ($userdata['solde'] < $montantTotal) {
-            return redirect()->back()->with('error', 'Solde insuffisant. Solde disponible : ' . number_format($userdata['solde'], 0, ',', ' ') . ' FCFA');
+            return redirect()->back()->with('error', 'Solde insuffisant. Solde disponible : ' . number_format($userdata['solde'], 0, ',', ' ') . ' Ar. Frais : ' . number_format($frais, 0, ',', ' ') . ' Ar');
         }
 
         // Mettre à jour le solde
@@ -104,16 +116,18 @@ class TransactionController extends BaseController
         // Créer le mouvement
         $mouvementModel = new MouvementModel();
         $mouvementModel->createRetrait(
-            $userdata['id'], 
-            $montant, 
-            $frais, 
+            $userdata['id'],
+            $montant,
+            $frais,
             $tarif ? $tarif['id'] : null
         );
 
-        return redirect()->to('/solde')->with('success', 'Retrait de ' . number_format($montant, 0, ',', ' ') . ' FCFA effectué. Frais : ' . number_format($frais, 0, ',', ' ') . ' FCFA');
+        return redirect()->to('/Compte/solde')->with('success', 'Retrait de ' . number_format($montant, 0, ',', ' ') . ' Ar effectué. Frais : ' . number_format($frais, 0, ',', ' ') . ' Ar');
     }
 
-   
+    // ============================================
+    // TRANSFERT
+    // ============================================
     public function transfert()
     {
         $numero = session()->get('numero');
@@ -135,7 +149,7 @@ class TransactionController extends BaseController
             return redirect()->to('/Authentification/login')->with('error', 'Veuillez vous connecter');
         }
 
-        if (!$numeroDestinataire || !$montant || $montant <= 0) {
+        if (!$numeroDestinataire || !is_numeric($montant) || $montant <= 0) {
             return redirect()->back()->with('error', 'Tous les champs sont obligatoires');
         }
 
@@ -159,14 +173,14 @@ class TransactionController extends BaseController
 
         // Calculer les frais
         $tarifModel = new TarifModel();
-        $tarif = $tarifModel->findTarif($sourceData['id_operateur'], 3, $montant);
+        $tarif = $tarifModel->findTarifApplicable($sourceData['id_operateur'], 3, $montant);
         
         $frais = $tarif ? $tarif['montant_frais'] : 0;
         $montantTotal = $montant + $frais;
 
         // Vérifier le solde de l'émetteur
         if ($sourceData['solde'] < $montantTotal) {
-            return redirect()->back()->with('error', 'Solde insuffisant. Solde disponible : ' . number_format($sourceData['solde'], 0, ',', ' ') . ' FCFA');
+            return redirect()->back()->with('error', 'Solde insuffisant. Solde disponible : ' . number_format($sourceData['solde'], 0, ',', ' ') . ' Ar. Frais : ' . number_format($frais, 0, ',', ' ') . ' Ar');
         }
 
         // Mettre à jour les soldes
@@ -186,6 +200,6 @@ class TransactionController extends BaseController
             $tarif ? $tarif['id'] : null
         );
 
-        return redirect()->to('/solde')->with('success', 'Transfert de ' . number_format($montant, 0, ',', ' ') . ' FCFA vers ' . $numeroDestinataire . ' effectué. Frais : ' . number_format($frais, 0, ',', ' ') . ' FCFA');
+        return redirect()->to('/Compte/solde')->with('success', 'Transfert de ' . number_format($montant, 0, ',', ' ') . ' Ar vers ' . $numeroDestinataire . ' effectué. Frais : ' . number_format($frais, 0, ',', ' ') . ' Ar');
     }
 }

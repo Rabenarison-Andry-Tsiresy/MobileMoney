@@ -17,13 +17,13 @@ $routes->group('Authentification', function ($routes) {
 });
 
 // Compte
-$routes->group('Compte', ['filter' => 'auth'], function ($routes) {
+$routes->group('Compte', function ($routes) {
     $routes->get('solde', 'CompteController::solde');
     $routes->get('historique', 'CompteController::historique');
 });
 
 // Transactions
-$routes->group('Transaction', ['filter' => 'auth'], function ($routes) {
+$routes->group('Transaction', function ($routes) {
     // Dépôt
     $routes->get('depot', 'TransactionController::depot');
     $routes->post('depot', 'TransactionController::faireDepot');
@@ -38,4 +38,4 @@ $routes->group('Transaction', ['filter' => 'auth'], function ($routes) {
 });
 
 // Dashboard
-$routes->get('dashboard', 'DashboardController::index', ['filter' => 'auth']);
+$routes->get('dashboard', 'DashboardController::index');

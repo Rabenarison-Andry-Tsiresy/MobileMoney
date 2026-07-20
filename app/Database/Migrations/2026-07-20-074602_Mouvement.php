@@ -25,13 +25,13 @@ class Mouvement extends Migration
                 'type'       => 'INT',
                 'constraint' => 11,
                 'unsigned'   => true,
-                'null'       => true,  // NULL pour dépôt
+                'null'       => true,
             ],
             'id_numero_destination' => [
                 'type'       => 'INT',
                 'constraint' => 11,
                 'unsigned'   => true,
-                'null'       => true,  // NULL pour retrait
+                'null'       => true,
             ],
             'montant' => [
                 'type'       => 'DECIMAL',
@@ -48,7 +48,7 @@ class Mouvement extends Migration
                 'type'       => 'INT',
                 'constraint' => 11,
                 'unsigned'   => true,
-                'null'       => true,  // Pour traçabilité
+                'null'       => true,
             ],
             'date_transaction' => [
                 'type'    => 'DATETIME',
@@ -63,10 +63,10 @@ class Mouvement extends Migration
         $this->forge->addForeignKey('id_tarif', 'tarif', 'id', 'CASCADE', 'SET NULL');
         $this->forge->createTable('mouvement');
         
-        // Ajouter des index pour les recherches
-        $this->db->query('CREATE INDEX idx_mouvement_source ON mouvement (id_numero_source)');
-        $this->db->query('CREATE INDEX idx_mouvement_destination ON mouvement (id_numero_destination)');
-        $this->db->query('CREATE INDEX idx_mouvement_date ON mouvement (date_transaction)');
+        // Index pour SQLite
+        $this->db->query('CREATE INDEX IF NOT EXISTS idx_mouvement_source ON mouvement (id_numero_source)');
+        $this->db->query('CREATE INDEX IF NOT EXISTS idx_mouvement_destination ON mouvement (id_numero_destination)');
+        $this->db->query('CREATE INDEX IF NOT EXISTS idx_mouvement_date ON mouvement (date_transaction)');
     }
 
     public function down()

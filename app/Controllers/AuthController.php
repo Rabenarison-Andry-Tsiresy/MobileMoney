@@ -8,7 +8,7 @@ class AuthController extends BaseController
 {   
     public function login()
     {
-        return view('Auth/login');
+        return view('Auth/Login');
     }
     
     public function loginAuth()

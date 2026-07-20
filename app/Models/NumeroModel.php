@@ -10,6 +10,7 @@ class NumeroModel extends Model
     protected $allowedFields = ['numero', 'id_client', 'id_operateur', 'solde'];
     protected $useTimestamps = true;
     protected $createdField = 'date_creation';
+    protected $updatedField = '';
 
     public function findByNumero($numero)
     {
@@ -29,7 +30,10 @@ class NumeroModel extends Model
 
     public function updateSolde($numero, $nouveauSolde)
     {
-        return $this->where('numero', $numero)->set('solde', $nouveauSolde)->update();
+
+        return $this->where('numero', $numero)->update(null, [
+            'solde' => (float) $nouveauSolde
+        ]);
     }
 
 }
