@@ -232,6 +232,7 @@ if ($numeroSource) {
             const inclureFrais = document.getElementById('inclureFrais').checked;
             const fraisInfo = document.getElementById('fraisInfo');
             const fraisTransfertInfo = document.getElementById('fraisTransfertInfo');
+            const commissionInfo = document.getElementById('commissionInfo');
             const fraisRetraitInfo = document.getElementById('fraisRetraitInfo');
             const montantRecuInfo = document.getElementById('montantRecuInfo');
 
@@ -244,7 +245,26 @@ if ($numeroSource) {
             const memeOperateur = prefixeSource && prefixDest === prefixeSource;
 
             if (!memeOperateur) {
-                fraisInfo.style.display = 'none';
+                const commissionsData = <?= json_encode($commissions ?? []) ?>;
+                let commission = 0;
+                for (const c of commissionsData) {
+                    if (c.id_operateur_depart == prefixeSource && c.id_operateur_arrivee == prefixDest) {
+                        commission = montant * (parseFloat(c.pourcentage) / 100);
+                        break;
+                    }
+                }
+                
+                const montantTotalADebiter = montant + commission;
+                
+                if (commission > 0) {
+                    fraisInfo.style.display = 'block';
+                    commissionInfo.textContent = 'Commission (' + (parseFloat(c.pourcentage) || 0).toFixed(2) + '%) : ' + commission.toLocaleString() + ' Ar';
+                    fraisTransfertInfo.textContent = '';
+                    fraisRetraitInfo.textContent = '';
+                    montantRecuInfo.textContent = 'Montant reçu par le destinataire : ' + montant.toLocaleString() + ' Ar | Total à débiter : ' + montantTotalADebiter.toLocaleString() + ' Ar';
+                } else {
+                    fraisInfo.style.display = 'none';
+                }
                 return;
             }
 
@@ -273,6 +293,7 @@ if ($numeroSource) {
             const montantRecu = montant - fraisRetrait;
             
             fraisTransfertInfo.textContent = fraisTransfert > 0 ? 'Frais de transfert : ' + fraisTransfert.toLocaleString() + ' Ar' : '';
+            commissionInfo.textContent = '';
             fraisRetraitInfo.textContent = fraisRetrait > 0 ? 'Frais de retrait (destinataire) : ' + fraisRetrait.toLocaleString() + ' Ar' : '';
             
             if (fraisTransfert > 0 || fraisRetrait > 0) {

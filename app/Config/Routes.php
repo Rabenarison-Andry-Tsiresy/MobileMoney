@@ -39,3 +39,13 @@ $routes->group('Transaction', function ($routes) {
 
 // Dashboard
 $routes->get('dashboard', 'DashboardController::index');
+
+// Commissions
+$routes->group('Commission', function ($routes) {
+    $routes->get('/', 'CommissionController::index');
+    $routes->get('create', 'CommissionController::create');
+    $routes->post('store', 'CommissionController::store');
+    $routes->get('edit/(:num)', 'CommissionController::edit/$1');
+    $routes->post('update/(:num)', 'CommissionController::update/$1');
+    $routes->get('delete/(:num)', 'CommissionController::delete/$1');
+});
