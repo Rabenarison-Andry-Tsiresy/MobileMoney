@@ -79,6 +79,25 @@ class Updaterajout extends Seeder
         echo "✓ Tarifs insérés\n";
 
         // ============================================
+        // 4.5. COMMISSIONS (transferts inter-opérateurs)
+        // ============================================
+        $this->db->table('commission')->insertBatch([
+            // Orange (1) -> Airtel (2)
+            ['id_operateur_depart' => 1, 'id_operateur_arrivee' => 2, 'pourcentage' => 2.5],
+            // Orange (1) -> Telma (3)
+            ['id_operateur_depart' => 1, 'id_operateur_arrivee' => 3, 'pourcentage' => 3],
+            // Airtel (2) -> Orange (1)
+            ['id_operateur_depart' => 2, 'id_operateur_arrivee' => 1, 'pourcentage' => 2],
+            // Airtel (2) -> Telma (3)
+            ['id_operateur_depart' => 2, 'id_operateur_arrivee' => 3, 'pourcentage' => 2.5],
+            // Telma (3) -> Orange (1)
+            ['id_operateur_depart' => 3, 'id_operateur_arrivee' => 1, 'pourcentage' => 3],
+            // Telma (3) -> Airtel (2)
+            ['id_operateur_depart' => 3, 'id_operateur_arrivee' => 2, 'pourcentage' => 2.5],
+        ]);
+        echo "✓ Commissions insérées\n";
+
+        // ============================================
         // 5. CLIENTS
         // ============================================
         $this->db->table('client')->insertBatch([

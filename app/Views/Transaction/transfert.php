@@ -247,9 +247,11 @@ if ($numeroSource) {
             if (!memeOperateur) {
                 const commissionsData = <?= json_encode($commissions ?? []) ?>;
                 let commission = 0;
+                let pourcentage = 0;
                 for (const c of commissionsData) {
                     if (c.id_operateur_depart == prefixeSource && c.id_operateur_arrivee == prefixDest) {
-                        commission = montant * (parseFloat(c.pourcentage) / 100);
+                        pourcentage = parseFloat(c.pourcentage);
+                        commission = montant * (pourcentage / 100);
                         break;
                     }
                 }
@@ -258,7 +260,7 @@ if ($numeroSource) {
                 
                 if (commission > 0) {
                     fraisInfo.style.display = 'block';
-                    commissionInfo.textContent = 'Commission (' + (parseFloat(c.pourcentage) || 0).toFixed(2) + '%) : ' + commission.toLocaleString() + ' Ar';
+                    commissionInfo.textContent = 'Commission (' + pourcentage.toFixed(2) + '%) : ' + commission.toLocaleString() + ' Ar';
                     fraisTransfertInfo.textContent = '';
                     fraisRetraitInfo.textContent = '';
                     montantRecuInfo.textContent = 'Montant reçu par le destinataire : ' + montant.toLocaleString() + ' Ar | Total à débiter : ' + montantTotalADebiter.toLocaleString() + ' Ar';
