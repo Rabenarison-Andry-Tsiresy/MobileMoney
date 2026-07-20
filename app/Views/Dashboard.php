@@ -82,6 +82,7 @@
             <a href="/Transaction/depot" class="menu-item"><span class="icon">💰</span><span class="label">Dépôt</span></a>
             <a href="/Transaction/retrait" class="menu-item"><span class="icon">💳</span><span class="label">Retrait</span></a>
             <a href="/Transaction/transfert" class="menu-item"><span class="icon">📤</span><span class="label">Transfert</span></a>
+            <a href="/Commission" class="menu-item"><span class="icon">💸</span><span class="label">Commissions</span></a>
             <a href="/Compte/historique" class="menu-item"><span class="icon">📋</span><span class="label">Historique</span></a>
         </div>
 
