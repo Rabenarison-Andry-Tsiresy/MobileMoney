@@ -23,7 +23,7 @@ class CreatePrefixeTable extends Migration
                 'null'       => false,
             ],
 
-            'prefixe' => [
+            'libelle' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '100',
             ],

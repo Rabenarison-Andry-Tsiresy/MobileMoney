@@ -35,16 +35,16 @@ Examen S4 mobile money
 - [x] Seeder `TarifSeeder` (barème de test par tranche) @IA
 
 ### Modèle
-- [ ] `OperateurModel` (CRUD standard)
-- [ ] `PrefixeModel` (méthode `findOperateurByPrefixe($prefixe)`)
-- [ ] `OperationModel` (CRUD standard, lecture seule côté front normalement)
-- [ ] `TarifModel`
-      - [ ] `getTranchesByOperateurOperation($idOperateur, $idOperation)`
-      - [ ] `findTarifApplicable($idOperateur, $idOperation, $montant)`
-      - [ ] Validation métier : détection de chevauchement de tranches avant insert/update
+- [x] `OperateurModel` (CRUD standard)(@Started)
+- [x] `PrefixeModel` (méthode `findOperateurByPrefixe($prefixe)`)
+- [x] `OperationModel` (CRUD standard, lecture seule côté front normalement)
+- [x] `TarifModel`
+      - [x] `getTranchesByOperateurOperation($idOperateur, $idOperation)`
+      - [x] `findTarifApplicable($idOperateur, $idOperation, $montant)`
+      - [x] Validation métier : détection de chevauchement de tranches avant insert/update
 
 ### Controller
-- [ ] `OperateurController` : `index`, `new`, `create`, `edit`, `update`, `delete`
+- [] `OperateurController` : `index`, `new`, `create`, `edit`, `update`, `delete`
 - [ ] `PrefixeController` : CRUD (lié à un opérateur)
 - [ ] `OperationController` : `index` (lecture), gestion libellés si besoin
 - [ ] `TarifController` :
