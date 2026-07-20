@@ -1,0 +1,256 @@
+CRITICAL - 2026-07-20 08:34:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 08:34:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: Authentification]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 08:34:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: Authentification/login]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 08:34:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: Authentification/login]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 08:35:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: Authentification/login]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 08:35:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: Authentification/login]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 08:35:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: Authentification/login]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 08:35:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: Authentification/login]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 08:35:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: Authentification/login]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 08:37:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/shadow2151/Documents/S4Examen/MobileMoney/public/index.php')
+CRITICAL - 2026-07-20 08:38:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-07-20 08:38:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-07-20 08:38:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-07-20 08:38:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-07-20 08:38:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-07-20 08:38:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-07-20 08:38:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2026-07-20 08:39:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AuthController.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-07-20 09:09:02 --> no such table: main.operateur
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute()
+ 6 APPPATH/Database/Seeds/Numero.php(11): CodeIgniter\Database\BaseBuilder->insertBatch()
+ 7 SYSTEMPATH/Database/Seeder.php(155): App\Database\Seeds\Numero->run()
+ 8 SYSTEMPATH/Commands/Database/Seed.php(79): CodeIgniter\Database\Seeder->call()
+ 9 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
+10 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+11 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+13 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
+ERROR - 2026-07-20 09:10:04 --> no such table: main.operateur
+in SYSTEMPATH/Database/SQLite3/Connection.php on line 163.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(163): SQLite3->exec()
+ 2 SYSTEMPATH/Database/BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute()
+ 6 APPPATH/Database/Seeds/Numero.php(11): CodeIgniter\Database\BaseBuilder->insertBatch()
+ 7 SYSTEMPATH/Database/Seeder.php(155): App\Database\Seeds\Numero->run()
+ 8 SYSTEMPATH/Commands/Database/Seed.php(79): CodeIgniter\Database\Seeder->call()
+ 9 SYSTEMPATH/CLI/Commands.php(74): CodeIgniter\Commands\Database\Seed->run()
+10 SYSTEMPATH/CLI/Console.php(47): CodeIgniter\CLI\Commands->run()
+11 SYSTEMPATH/Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH/Boot.php(166): CodeIgniter\Boot::runCommand()
+13 ROOTPATH/spark(87): CodeIgniter\Boot::bootSpark()
