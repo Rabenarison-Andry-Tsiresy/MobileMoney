@@ -6,8 +6,8 @@ Examen S4 mobile money
 
 ## 0. Setup commun @Both
 
-- [ ] Config `.env` (DB, base_url)
-- [ ] `app/Config/Database.php` vérifié
+- [x] Config `.env` (DB, base_url)
+- [x] `app/Config/Database.php` vérifié
 - [ ] `app/Config/Routes.php` : structure de base + groupes de routes
 - [ ] `BaseController` commun (helpers, réponses JSON si API)
 - [ ] Migrations générées pour **toutes** les tables (une par table, dans l'ordre des FK) :
@@ -26,13 +26,13 @@ Examen S4 mobile money
 ## 1. Module Opérateur / Préfixe / Opération / Tarif @Manoina
 
 ### Database
-- [ ] Migration `Operateur` (id, libelle)
-- [ ] Migration `Prefixe` (id, id_operateur FK, prefixe UNIQUE)
-- [ ] Migration `Operation` (id, libelle)
-- [ ] Migration `Tarif` (id, id_operateur FK, id_operation FK, montant_min, montant_max, montant_frais)
-- [ ] Seeder `OperationSeeder` (depot, retrait, transfert)
-- [ ] Seeder `OperateurSeeder` + `PrefixeSeeder` (opérateurs + préfixes de test)
-- [ ] Seeder `TarifSeeder` (barème de test par tranche)
+- [x] Migration `Operateur` (id, libelle) (@started)
+- [x] Migration `Prefixe` (id, id_operateur FK, prefixe UNIQUE)
+- [x] Migration `Operation` (id, libelle)
+- [x] Migration `Tarif` (id, id_operateur FK, id_operation FK, montant_min, montant_max, montant_frais)
+- [x] Seeder `OperationSeeder` (depot, retrait, transfert) @IA
+- [x] Seeder `OperateurSeeder` + `PrefixeSeeder` (opérateurs + préfixes de test) @IA
+- [x] Seeder `TarifSeeder` (barème de test par tranche) @IA
 
 ### Modèle
 - [ ] `OperateurModel` (CRUD standard)
