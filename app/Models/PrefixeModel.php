@@ -4,14 +4,14 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class OperateurModel extends Model
+class PrefixeModel extends Model
 {
-    protected $table            = 'Operation';
+    protected $table            = 'prefixe';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
 
-    protected $allowedFields    = ['libelle', 'id_operateur', 'libelle'];
+    protected $allowedFields    = ['libelle', 'id_operateur'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -19,13 +19,17 @@ class OperateurModel extends Model
 
     // Validation
     protected $validationRules      = [
-        'libelle' => 'required|min_length[2]|max_length[100]|is_unique[operation.libelle,id,{id}]'
+        'libelle'      => 'required|min_length[1]|max_length[10]|is_unique[prefixe.libelle,id,{id}]',
+        'id_operateur' => 'required'
     ];
 
     protected $validationMessages   = [
         'libelle' => [
-            'required'   => 'Le libellé est obligatoire.',
-            'is_unique'  => 'Cette opération existe déjà.',
+            'required'   => 'Le préfixe est obligatoire.',
+            'is_unique'  => 'Ce préfixe existe déjà.',
+        ],
+        'id_operateur' => [
+            'required' => 'L\'opérateur est obligatoire.',
         ]
     ];
 

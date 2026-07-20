@@ -17,13 +17,13 @@ $routes->group('Authentification', function ($routes) {
 });
 
 // Compte
-$routes->group('Compte', ['filter' => 'auth'], function ($routes) {
+$routes->group('Compte', function ($routes) {
     $routes->get('solde', 'CompteController::solde');
     $routes->get('historique', 'CompteController::historique');
 });
 
 // Transactions
-$routes->group('Transaction', ['filter' => 'auth'], function ($routes) {
+$routes->group('Transaction', function ($routes) {
     // Dépôt
     $routes->get('depot', 'TransactionController::depot');
     $routes->post('depot', 'TransactionController::faireDepot');
@@ -38,4 +38,14 @@ $routes->group('Transaction', ['filter' => 'auth'], function ($routes) {
 });
 
 // Dashboard
-$routes->get('dashboard', 'DashboardController::index', ['filter' => 'auth']);
+$routes->get('dashboard', 'DashboardController::index');
+
+// Commissions
+$routes->group('Commission', function ($routes) {
+    $routes->get('/', 'CommissionController::index');
+    $routes->get('create', 'CommissionController::create');
+    $routes->post('store', 'CommissionController::store');
+    $routes->get('edit/(:num)', 'CommissionController::edit/$1');
+    $routes->post('update/(:num)', 'CommissionController::update/$1');
+    $routes->get('delete/(:num)', 'CommissionController::delete/$1');
+});

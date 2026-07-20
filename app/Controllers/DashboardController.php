@@ -27,7 +27,7 @@ class DashboardController extends BaseController
             ->where('numero.numero', $numero)
             ->first();
         
-        // Récupérer les dernières transactions (5 dernières)
+        // Récupérer les dernières transactions
         $dernieresTransactions = $mouvementModel
             ->select('
                 mouvement.*,
@@ -55,7 +55,7 @@ class DashboardController extends BaseController
             'statistiques' => $statistiques
         ];
 
-        return view('dashboard', $data);
+        return view('Dashboard', $data);
     }
     
     private function getStatistiques($userId)

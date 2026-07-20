@@ -47,13 +47,13 @@ class Numero extends Migration
         ]);
         $this->forge->addKey('id', true);
         $this->forge->addForeignKey('id_client', 'client', 'id', 'CASCADE', 'CASCADE');
-        $this->forge->addForeignKey('id_operateur', 'operateur', 'id', 'CASCADE', 'RESTRICT');
+        $this->forge->addForeignKey('id_operateur', 'operateur', 'id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('numero');
         
-        // Ajouter des index pour les recherches
-        $this->db->query('CREATE INDEX idx_numero_client ON numero (id_client)');
-        $this->db->query('CREATE INDEX idx_numero_operateur ON numero (id_operateur)');
-        $this->db->query('CREATE INDEX idx_numero_numero ON numero (numero)');
+        // Index pour SQLite
+        $this->db->query('CREATE INDEX IF NOT EXISTS idx_numero_client ON numero (id_client)');
+        $this->db->query('CREATE INDEX IF NOT EXISTS idx_numero_operateur ON numero (id_operateur)');
+        $this->db->query('CREATE INDEX IF NOT EXISTS idx_numero_numero ON numero (numero)');
     }
 
     public function down()

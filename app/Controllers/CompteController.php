@@ -40,12 +40,19 @@ class CompteController extends BaseController
     public function historique()
     {
         $numero = session()->get('numero');
-        $userId = session()->get('user_id');
 
         if (!$numero) {
             return redirect()->to('/Authentification/login')->with('error', 'Veuillez vous connecter');
         }
 
+        $numeroModel = new NumeroModel();
+        $numeroData = $numeroModel->where('numero', $numero)->first();
+        
+        if (!$numeroData) {
+            return redirect()->to('/Authentification/login')->with('error', 'Numéro introuvable');
+        }
+
+        $idNumero = $numeroData['id'];
         $mouvementModel = new MouvementModel();
         $historique = $mouvementModel
             ->select('
@@ -57,14 +64,15 @@ class CompteController extends BaseController
             ->join('operation', 'operation.id = mouvement.id_operation')
             ->join('numero as source', 'source.id = mouvement.id_numero_source', 'left')
             ->join('numero as dest', 'dest.id = mouvement.id_numero_destination', 'left')
-            ->where('mouvement.id_numero_source', $userId)
-            ->orWhere('mouvement.id_numero_destination', $userId)
+            ->where('mouvement.id_numero_source', $idNumero)
+            ->orWhere('mouvement.id_numero_destination', $idNumero)
             ->orderBy('mouvement.date_transaction', 'DESC')
             ->findAll();
 
         $data = [
             'historique' => $historique,
-            'numero' => $numero
+            'numero' => $numero,
+            'numero_id' => $idNumero
         ];
 
         return view('Compte/historique', $data);

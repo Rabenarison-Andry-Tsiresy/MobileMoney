@@ -10,7 +10,7 @@ class ClientModel extends Model
     protected $allowedFields = ['nom'];
     protected $useTimestamps = true;
     protected $createdField = 'date_creation';
-    protected $updatedField = null;
+    protected $updatedField = '';
     
 
     public function getClientById($id)

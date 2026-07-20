@@ -8,11 +8,10 @@ class CreateTarifTable extends Migration
 {
     public function up()
     {
-        //
         $this->forge->addField([
             'id' => [
                 'type'           => 'INT',
-                'constraint'     => 5,
+                'constraint'     => 11,
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
@@ -20,41 +19,41 @@ class CreateTarifTable extends Migration
                 'type'       => 'INT',
                 'constraint' => 11,
                 'unsigned'   => true,
-                'null'   => false,
+                'null'       => false,
             ],
             'id_operateur' => [
                 'type'       => 'INT',
                 'constraint' => 11,
                 'unsigned'   => true,
-                'null'   => false,
-
+                'null'       => false,
             ],
             'montant_min' => [
                 'type'       => 'DECIMAL',
-                'constraint' => [10, 2],
+                'constraint' => '15,2',
+                'null'       => false,
             ],
             'montant_max' => [
                 'type'       => 'DECIMAL',
-                'constraint' => [10, 2],
+                'constraint' => '15,2',
+                'null'       => false,
             ],
             'montant_frais' => [
                 'type'       => 'DECIMAL',
-                'constraint' => [10, 2],
-                'null'   => false,
+                'constraint' => '15,2',
+                'null'       => false,
             ],
-            'created_at datetime default current_timestamp',
-            'updated_at datetime default current_timestamp on update current_timestamp',
         ]);
-
         $this->forge->addKey('id', true);
         $this->forge->addForeignKey('id_operation', 'operation', 'id', 'CASCADE', 'CASCADE');
         $this->forge->addForeignKey('id_operateur', 'operateur', 'id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('tarif');
+        
+        // Index pour SQLite
+        $this->db->query('CREATE INDEX IF NOT EXISTS idx_tarif_lookup ON tarif (id_operateur, id_operation, montant_min, montant_max)');
     }
 
     public function down()
     {
-        //
         $this->forge->dropTable('tarif');
     }
 }
