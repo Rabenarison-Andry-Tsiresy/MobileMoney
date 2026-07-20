@@ -11,20 +11,20 @@ class PrefixeModel extends Model
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
 
-    protected $allowedFields    = ['libelle', 'id_operateur'];
+    protected $allowedFields    = ['prefixe', 'id_operateur'];
 
-    protected $useTimestamps = true;
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
+    protected $useTimestamps = false;
+    // protected $createdField  = 'created_at';
+    // protected $updatedField  = '';
 
     // Validation
     protected $validationRules      = [
-        'libelle'      => 'required|min_length[1]|max_length[10]|is_unique[prefixe.libelle,id,{id}]',
+        'prefixe'      => 'required|min_length[1]|max_length[10]|is_unique[prefixe.prefixe,id,{id}]',
         'id_operateur' => 'required'
     ];
 
     protected $validationMessages   = [
-        'libelle' => [
+        'prefixe' => [
             'required'   => 'Le préfixe est obligatoire.',
             'is_unique'  => 'Ce préfixe existe déjà.',
         ],
@@ -37,7 +37,7 @@ class PrefixeModel extends Model
     {
         return $this->select('operateur.*') 
             ->join('operateur', 'operateur.id = prefixe.id_operateur') 
-            ->where('prefixe.libelle', $prefixe) 
+            ->where('prefixe.prefixe', $prefixe) 
             ->first();
     }
 }

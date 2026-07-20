@@ -19,7 +19,7 @@
         .solde-card { background: white; border-radius: 15px; padding: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center; }
         .solde-info .montant { font-size: 42px; font-weight: bold; color: #28a745; }
         .solde-info .devise { font-size: 20px; color: #666; }
-        .menu-rapide { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 25px; }
+        .menu-rapide { display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; margin-bottom: 25px; }
         .menu-item { background: white; padding: 20px; border-radius: 15px; text-align: center; text-decoration: none; color: #333; transition: 0.3s; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .menu-item:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
         .menu-item .icon { font-size: 35px; display: block; margin-bottom: 8px; }

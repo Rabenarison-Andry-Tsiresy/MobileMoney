@@ -16,7 +16,7 @@ class TarifModel extends Model
         'id_operation' => 'required',
         'montant_min' => 'required|numeric',
         'montant_max' => 'required|numeric',
-        'montant_frais' => 'required|numeric|min_value[0]'
+        'montant_frais' => 'required|numeric|greater_than_equal_to[0]'
     ];
 
     protected $validationMessages = [
@@ -33,7 +33,7 @@ class TarifModel extends Model
         'montant_frais' => [
             'required' => 'Le montant des frais est obligatoire.',
             'numeric' => 'Le montant des frais doit être un nombre.',
-            'min_value' => 'Le montant des frais doit être un nombre positif.',
+            'greater_than_equal_to' => 'Le montant des frais doit être un nombre positif.',
         ]
     ];
 
