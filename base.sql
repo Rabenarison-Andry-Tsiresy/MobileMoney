@@ -121,13 +121,11 @@ INSERT INTO Operateur (libelle) VALUES
 INSERT INTO Prefixe (id_operateur, prefixe) VALUES
     -- Orange (id=1)
     (1, '032'),
-    (1, '033'),
-    (1, '034'),
+    (1, '037'),
     -- Airtel (id=2)
-    (2, '035'),
-    (2, '036'),
+    (2, '033'),
     -- Telma (id=3)
-    (3, '037'),
+    (3, '034'),
     (3, '038');
 
 -- ---------------------------------------------
@@ -199,19 +197,19 @@ INSERT INTO Numero (numero, id_client, id_operateur, solde) VALUES
     ('0322345678', 2, 1, 25000),
     ('0323456789', 3, 1, 75000),
     ('0324567890', 4, 1, 120000),
-    ('0331234567', 5, 1, 45000),
-    ('0332345678', 6, 1, 180000),
-    ('0341234567', 7, 1, 60000),
+    ('0321234567', 5, 1, 45000),
+    ('0322345678', 6, 1, 180000),
+    ('0321234567', 7, 1, 60000),
     
     -- Airtel (id_operateur=2)
-    ('0351234567', 8, 2, 50000),
-    ('0352345678', 9, 2, 95000),
-    ('0361234567', 10, 2, 30000),
-    ('0362345678', 11, 2, 200000),
+    ('0331234567', 8, 2, 50000),
+    ('0332345678', 9, 2, 95000),
+    ('0331234567', 10, 2, 30000),
+    ('0332345678', 11, 2, 200000),
     
     -- Telma (id_operateur=3)
-    ('0371234567', 12, 3, 125000),
-    ('0372345678', 13, 3, 55000),
+    ('0341234567', 12, 3, 125000),
+    ('0342345678', 13, 3, 55000),
     ('0381234567', 14, 3, 85000),
     ('0382345678', 15, 3, 32000);
 
@@ -236,3 +234,14 @@ INSERT INTO Mouvement (id_operation, id_numero_source, id_numero_destination, mo
     (3, 4, 3, 25000, 200, 8, datetime('now', '-2 days')),
     (3, 6, 8, 10000, 200, 8, datetime('now', '-1 day')),
     (3, 10, 14, 5000, 50, 14, datetime('now', '-6 hours'));
+
+
+
+CREATE TABLE Commission (
+    id   INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_operateur_depart int,
+    id_operateur_arrivee int,
+    montant_min FLOAT ,
+    FOREIGN KEY (id_operateur_depart) REFERENCES Operateur(id),
+    FOREIGN KEY (id_operateur_arrivee) REFERENCES Operateur(id)
+);

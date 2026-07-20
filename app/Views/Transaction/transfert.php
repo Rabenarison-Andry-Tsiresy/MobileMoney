@@ -105,14 +105,26 @@ if ($numeroSource) {
             <?= csrf_field() ?>
             <input type="hidden" name="mode" id="mode" value="simple">
             
-            <!-- Zone de transfert simple -->
-            <div id="simpleZone">
-                <label>Numéro du destinataire</label>
-                <input type="text" name="numero_destinataire" placeholder="0337654321" required>
-                
-                <label>Montant (Ar)</label>
-                <input type="number" name="montant" placeholder="Ex: 5000" required min="1">
-            </div>
+             <!-- Zone de transfert simple -->
+             <div id="simpleZone">
+                 <label>Numéro du destinataire</label>
+                 <input type="text" name="numero_destinataire" placeholder="0337654321" required id="numeroDestinataire">
+                 
+                 <label>Montant (Ar)</label>
+                 <input type="number" name="montant" placeholder="Ex: 5000" required min="1" id="montantTransfert" onchange="updateFraisInfo()" onkeyup="updateFraisInfo()">
+                 
+                 <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-weight: normal;">
+                     <input type="checkbox" name="inclure_frais" id="inclureFrais" style="width: auto;" onchange="updateFraisInfo()">
+                     Inclure les frais de retrait dans le montant envoyé
+                 </label>
+                 
+                   <div id="fraisInfo" style="display: none; background: #fff3cd; padding: 10px; border-radius: 8px; margin: 10px 0; font-size: 14px;">
+                       <div id="fraisTransfertInfo"></div>
+                       <div id="commissionInfo"></div>
+                       <div id="fraisRetraitInfo"></div>
+                       <div id="montantRecuInfo" style="margin-top: 5px; font-weight: bold;"></div>
+                   </div>
+             </div>
             
             <!-- Zone de transfert multiple -->
             <div id="multipleZone" style="display:none;">
@@ -120,9 +132,9 @@ if ($numeroSource) {
                     <div class="recipient-group" data-index="0">
                         <button type="button" class="remove-btn" onclick="removeRecipient(this)" style="display:none;">✕</button>
                         <label>Destinataire 1</label>
-                        <input type="text" name="destinataires[0][numero]" placeholder="0337654321" required>
+                        <input type="text" name="destinataires[0][numero]" placeholder="0337654321">
                         <label>Montant (Ar)</label>
-                        <input type="number" name="destinataires[0][montant]" placeholder="Ex: 5000" required min="1" onchange="updateTotal()" onkeyup="updateTotal()">
+                        <input type="number" name="destinataires[0][montant]" placeholder="Ex: 5000" min="1" onchange="updateTotal()" onkeyup="updateTotal()">
                     </div>
                 </div>
                 <button type="button" class="btn btn-success" onclick="addRecipient()" style="margin-top: 10px;">➕ Ajouter un destinataire</button>
@@ -154,10 +166,10 @@ if ($numeroSource) {
             document.getElementById('multipleZone').style.display = mode === 'multiple' ? 'block' : 'none';
             document.getElementById('totalZone').style.display = mode === 'multiple' ? 'block' : 'none';
             
-            document.querySelectorAll('#simpleZone input').forEach(input => {
+            document.querySelectorAll('#simpleZone input:not([type="checkbox"])').forEach(input => {
                 input.required = (mode === 'simple');
             });
-            document.querySelectorAll('#multipleZone input').forEach(input => {
+            document.querySelectorAll('#multipleZone input:not([type="checkbox"])').forEach(input => {
                 input.required = (mode === 'multiple');
             });
         }
@@ -171,9 +183,9 @@ if ($numeroSource) {
             div.innerHTML = `
                 <button type="button" class="remove-btn" onclick="removeRecipient(this)">✕</button>
                 <label>Destinataire ${recipientCount}</label>
-                <input type="text" name="destinataires[${recipientCount - 1}][numero]" placeholder="0337654321" required>
+                <input type="text" name="destinataires[${recipientCount - 1}][numero]" placeholder="0337654321">
                 <label>Montant (Ar)</label>
-                <input type="number" name="destinataires[${recipientCount - 1}][montant]" placeholder="Ex: 5000" required min="1" onchange="updateTotal()" onkeyup="updateTotal()">
+                <input type="number" name="destinataires[${recipientCount - 1}][montant]" placeholder="Ex: 5000" min="1" onchange="updateTotal()" onkeyup="updateTotal()">
             `;
             container.appendChild(div);
             updateTotal();
@@ -210,6 +222,66 @@ if ($numeroSource) {
         }
 
         const prefixeSource = '<?= $prefixeSource ?? "" ?>';
+
+        function updateFraisInfo() {
+            const mode = document.getElementById('mode').value;
+            if (mode !== 'simple') return;
+
+            const numeroDest = document.getElementById('numeroDestinataire').value.trim();
+            const montant = parseFloat(document.getElementById('montantTransfert').value) || 0;
+            const inclureFrais = document.getElementById('inclureFrais').checked;
+            const fraisInfo = document.getElementById('fraisInfo');
+            const fraisTransfertInfo = document.getElementById('fraisTransfertInfo');
+            const fraisRetraitInfo = document.getElementById('fraisRetraitInfo');
+            const montantRecuInfo = document.getElementById('montantRecuInfo');
+
+            if (!numeroDest || numeroDest.length < 3 || montant <= 0) {
+                fraisInfo.style.display = 'none';
+                return;
+            }
+
+            const prefixDest = numeroDest.substring(0, 3);
+            const memeOperateur = prefixeSource && prefixDest === prefixeSource;
+
+            if (!memeOperateur) {
+                fraisInfo.style.display = 'none';
+                return;
+            }
+
+            const tarifTransfertData = <?= json_encode($tarifsTransfert ?? []) ?>;
+            const tarifRetraitData = <?= json_encode($tarifsRetrait ?? []) ?>;
+            
+            let fraisTransfert = 0;
+            for (const t of tarifTransfertData) {
+                if (montant >= t.montant_min && montant <= t.montant_max) {
+                    fraisTransfert = parseFloat(t.montant_frais);
+                    break;
+                }
+            }
+            
+            let fraisRetrait = 0;
+            if (inclureFrais) {
+                for (const t of tarifRetraitData) {
+                    if (montant >= t.montant_min && montant <= t.montant_max) {
+                        fraisRetrait = parseFloat(t.montant_frais);
+                        break;
+                    }
+                }
+            }
+            
+            const montantTotalADebiter = montant + fraisTransfert;
+            const montantRecu = montant - fraisRetrait;
+            
+            fraisTransfertInfo.textContent = fraisTransfert > 0 ? 'Frais de transfert : ' + fraisTransfert.toLocaleString() + ' Ar' : '';
+            fraisRetraitInfo.textContent = fraisRetrait > 0 ? 'Frais de retrait (destinataire) : ' + fraisRetrait.toLocaleString() + ' Ar' : '';
+            
+            if (fraisTransfert > 0 || fraisRetrait > 0) {
+                fraisInfo.style.display = 'block';
+                montantRecuInfo.textContent = 'Montant reçu par le destinataire : ' + montantRecu.toLocaleString() + ' Ar | Total à débiter : ' + montantTotalADebiter.toLocaleString() + ' Ar';
+            } else {
+                fraisInfo.style.display = 'none';
+            }
+        }
 
         document.getElementById('transferForm').addEventListener('submit', function(e) {
             const mode = document.getElementById('mode').value;
@@ -254,6 +326,8 @@ if ($numeroSource) {
                 }
             }
         });
+
+        setMode('simple');
     </script>
 </body>
 </html>
