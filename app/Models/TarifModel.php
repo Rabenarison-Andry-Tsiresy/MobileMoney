@@ -4,47 +4,36 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class OperateurModel extends Model
+class TarifModel extends Model
 {
-    protected $table            = 'Tarif';
-    protected $primaryKey       = 'id';
-    protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $table = 'tarif';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['id_operateur', 'id_operation', 'montant_min', 'montant_max', 'montant_frais'];
+    protected $useTimestamps = false;
 
-    protected $allowedFields    = ['id_operation', 'id_operateur', 'montant_min', 'montant_max', 'montant_frais'];
-
-    protected $useTimestamps = true;
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-
-    // Validation
-    protected $validationRules      = [
+    protected $validationRules = [
         'id_operateur' => 'required',
         'id_operation' => 'required',
         'montant_min' => 'required|numeric',
         'montant_max' => 'required|numeric',
-        'montant_frais' => 'required|numeric|min_value[0]'
+        'montant_frais' => 'required|numeric|greater_than_equal_to[0]'
     ];
 
-    protected $validationMessages   = [
-        'id_operateur' => [
-            'required'   => 'L\'opérateur est obligatoire.',
-        ],
-        'id_operation' => [
-            'required'   => 'L\'opération est obligatoire.',
-        ],
+    protected $validationMessages = [
+        'id_operateur' => ['required' => 'L\'opérateur est obligatoire.'],
+        'id_operation' => ['required' => 'L\'opération est obligatoire.'],
         'montant_min' => [
-            'required'   => 'Le montant minimum est obligatoire.',
-            'numeric'    => 'Le montant minimum doit être un nombre.',
+            'required' => 'Le montant minimum est obligatoire.',
+            'numeric' => 'Le montant minimum doit être un nombre.',
         ],
         'montant_max' => [
-            'required'   => 'Le montant maximum est obligatoire.',
-            'numeric'    => 'Le montant maximum doit être un nombre.',
+            'required' => 'Le montant maximum est obligatoire.',
+            'numeric' => 'Le montant maximum doit être un nombre.',
         ],
         'montant_frais' => [
-            'required'   => 'Le montant des frais est obligatoire.',
-            'numeric'    => 'Le montant des frais doit être un nombre.',
-            'min_value[0]' => 'Le montant des frais doit être un nombre positif.',
+            'required' => 'Le montant des frais est obligatoire.',
+            'numeric' => 'Le montant des frais doit être un nombre.',
+            'greater_than_equal_to' => 'Le montant des frais doit être un nombre positif.',
         ]
     ];
 
@@ -52,34 +41,49 @@ class OperateurModel extends Model
     {
         return $this->where('id_operateur', $idOperateur)
             ->where('id_operation', $idOperation)
-            ->orderBy('montant_min', 'ASC') 
+            ->orderBy('montant_min', 'ASC')
             ->findAll();
     }
 
-
-    public function findTarifApplicable(int $idOperateur, int $idOperation, float $montant): ?array
+    public function findTarifApplicable($idOperateur, $idOperation, $montant): ?array
     {
-        return $this->where('id_operateur', $idOperateur)
-            ->where('id_operation', $idOperation)
-            ->where('montant_min <=', $montant) 
-            ->where('montant_max >=', $montant) 
+    
+        if (!is_numeric($idOperateur) || !is_numeric($idOperation) || !is_numeric($montant)) {
+            return null;
+        }
+
+        return $this->where('id_operateur', (int) $idOperateur)
+            ->where('id_operation', (int) $idOperation)
+            ->where('montant_min <=', (float) $montant)
+            ->where('montant_max >=', (float) $montant)
             ->first();
     }
 
+    /**
+     * Vérifier si une nouvelle tranche chevauche une tranche existante
+     */
     public function aChevauchement(int $idOperateur, int $idOperation, float $nouveauMin, float $nouveauMax, ?int $idTarifExclu = null): bool
     {
-        $builder = $this->where('id_operateur', $idOperateur)
+    
+        $tranches = $this->where('id_operateur', $idOperateur)
             ->where('id_operation', $idOperation)
-            // Formule mathématique pour vérifier si deux intervalles se croisent :
-            ->where('montant_min <=', $nouveauMax)
-            ->where('montant_max >=', $nouveauMin);
+            ->findAll();
 
-        // Si on est en train de faire un UPDATE, on exclut la ligne actuelle de la vérification
+    
         if ($idTarifExclu) {
-            $builder->where('id !=', $idTarifExclu);
+            $tranches = array_filter($tranches, function($t) use ($idTarifExclu) {
+                return $t['id'] != $idTarifExclu;
+            });
         }
 
-        // S'il trouve au moins 1 résultat, c'est qu'il y a un chevauchement !
-        return $builder->countAllResults() > 0;
+    
+        foreach ($tranches as $t) {
+    
+            if ($nouveauMin <= $t['montant_max'] && $nouveauMax >= $t['montant_min']) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

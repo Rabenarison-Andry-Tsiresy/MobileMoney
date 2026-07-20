@@ -1,0 +1,1089 @@
+ERROR - 2026-07-20 09:53:31 --> near "on": syntax error
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('CREATE TABLE `prefixe` (
+	`id` INTEGER PRIMARY KEY AUTOINCREMENT,
+	`id_operateur` INT NOT NULL,
+	`libelle` VARCHAR NOT NULL,
+	created_at datetime default current_timestamp,
+	updated_at datetime default current_timestamp on update current_timestamp,
+	CONSTRAINT `prefixe_id_operateur_foreign` FOREIGN KEY (`id_operateur`) REFERENCES `operateur`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('CREATE TABLE `prefixe` (
+	`id` INTEGER PRIMARY KEY AUTOINCREMENT,
+	`id_operateur` INT NOT NULL,
+	`libelle` VARCHAR NOT NULL,
+	created_at datetime default current_timestamp,
+	updated_at datetime default current_timestamp on update current_timestamp,
+	CONSTRAINT `prefixe_id_operateur_foreign` FOREIGN KEY (`id_operateur`) REFERENCES `operateur`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `prefixe` (
+	`id` INTEGER PRIMARY KEY AUTOINCREMENT,
+	`id_operateur` INT NOT NULL,
+	`libelle` VARCHAR NOT NULL,
+	created_at datetime default current_timestamp,
+	updated_at datetime default current_timestamp on update current_timestamp,
+	CONSTRAINT `prefixe_id_operateur_foreign` FOREIGN KEY (`id_operateur`) REFERENCES `operateur`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+)')
+ 4 SYSTEMPATH\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `prefixe` (
+	`id` INTEGER PRIMARY KEY AUTOINCREMENT,
+	`id_operateur` INT NOT NULL,
+	`libelle` VARCHAR NOT NULL,
+	created_at datetime default current_timestamp,
+	updated_at datetime default current_timestamp on update current_timestamp,
+	CONSTRAINT `prefixe_id_operateur_foreign` FOREIGN KEY (`id_operateur`) REFERENCES `operateur`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+)')
+ 5 APPPATH\Database\Migrations\2026-07-20-080444_CreatePrefixeTable.php(36): CodeIgniter\Database\Forge->createTable('prefixe')
+ 6 SYSTEMPATH\Database\MigrationRunner.php(1014): App\Database\Migrations\CreatePrefixeTable->up()
+ 7 SYSTEMPATH\Database\MigrationRunner.php(202): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+ 8 SYSTEMPATH\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(null)
+ 9 SYSTEMPATH\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+10 SYSTEMPATH\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+11 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+12 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+13 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+14 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+15 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:15:00 --> Error: Call to undefined function set_value()
+[Method: GET, Route: operateur/new]
+in APPPATH\Views\operateur\form.php on line 19.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('operateur/form', [], true)
+ 4 APPPATH\Controllers\OperateurController.php(25): view('operateur/form')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\OperateurController->new()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-07-20 12:42:33 --> no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:42:33\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:42:33\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:42:33\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:42:34 --> CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+[Method: POST, Route: prefixe/update/5]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:42:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 174.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:42:33\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:42:33\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:42:34 --> [Caused by] Exception: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:42:33\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:42:33\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:42:33\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-07-20 12:44:57 --> no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:44:57\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:44:57\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:44:57\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:44:57 --> CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+[Method: POST, Route: prefixe/update/5]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:44:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 174.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:44:57\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:44:57\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:44:57 --> [Caused by] Exception: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:44:57\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:44:57\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:44:57\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-07-20 12:45:48 --> no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:45:48\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:45:48\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:45:48\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:45:48 --> CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+[Method: POST, Route: prefixe/update/5]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:45:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 174.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:45:48\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:45:48\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:45:48 --> [Caused by] Exception: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:45:48\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:45:48\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 12:45:48\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:49:21 --> CodeIgniter\Validation\Exceptions\ValidationException: "min_value" is not a valid rule.
+[Method: POST, Route: tarif/create]
+in SYSTEMPATH\Validation\Validation.php on line 354.
+ 1 SYSTEMPATH\Validation\Validation.php(354): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_value')
+ 2 SYSTEMPATH\Validation\Validation.php(210): CodeIgniter\Validation\Validation->processRules('montant_frais', 'montant_frais', '0', [...], [...], 'montant_frais')
+ 3 SYSTEMPATH\BaseModel.php(1615): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(868): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\TarifController.php(66): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\TarifController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:50:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "rapport/comptes.php"
+[Method: GET, Route: rapport/comptes]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('rapport/comptes.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('rapport/comptes', [], true)
+ 3 APPPATH\Controllers\RapportController.php(80): view('rapport/comptes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\RapportController->comptesClients()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RapportController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 12:56:46 --> CodeIgniter\Validation\Exceptions\ValidationException: "min_value" is not a valid rule.
+[Method: POST, Route: tarif/create]
+in SYSTEMPATH\Validation\Validation.php on line 354.
+ 1 SYSTEMPATH\Validation\Validation.php(354): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_value')
+ 2 SYSTEMPATH\Validation\Validation.php(210): CodeIgniter\Validation\Validation->processRules('montant_frais', 'montant_frais', '0', [...], [...], 'montant_frais')
+ 3 SYSTEMPATH\BaseModel.php(1615): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(868): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\TarifController.php(66): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\TarifController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-07-20 13:01:49 --> CodeIgniter\Validation\Exceptions\ValidationException: "min_value" is not a valid rule.
+[Method: POST, Route: tarif/create]
+in SYSTEMPATH\Validation\Validation.php on line 354.
+ 1 SYSTEMPATH\Validation\Validation.php(354): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_value')
+ 2 SYSTEMPATH\Validation\Validation.php(210): CodeIgniter\Validation\Validation->processRules('montant_frais', 'montant_frais', '0', [...], [...], 'montant_frais')
+ 3 SYSTEMPATH\BaseModel.php(1615): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(868): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\TarifController.php(66): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\TarifController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:02:22 --> CodeIgniter\Validation\Exceptions\ValidationException: "min_value" is not a valid rule.
+[Method: POST, Route: tarif/create]
+in SYSTEMPATH\Validation\Validation.php on line 354.
+ 1 SYSTEMPATH\Validation\Validation.php(354): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_value')
+ 2 SYSTEMPATH\Validation\Validation.php(210): CodeIgniter\Validation\Validation->processRules('montant_frais', 'montant_frais', '0', [...], [...], 'montant_frais')
+ 3 SYSTEMPATH\BaseModel.php(1615): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(868): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\TarifController.php(66): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\TarifController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:03:10 --> CodeIgniter\Validation\Exceptions\ValidationException: "min_value" is not a valid rule.
+[Method: POST, Route: tarif/create]
+in SYSTEMPATH\Validation\Validation.php on line 354.
+ 1 SYSTEMPATH\Validation\Validation.php(354): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_value')
+ 2 SYSTEMPATH\Validation\Validation.php(210): CodeIgniter\Validation\Validation->processRules('montant_frais', 'montant_frais', '0', [...], [...], 'montant_frais')
+ 3 SYSTEMPATH\BaseModel.php(1615): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(868): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\TarifController.php(66): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\TarifController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+DEBUG - 2026-07-20 13:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 13:04:53 --> CodeIgniter\Validation\Exceptions\ValidationException: "min_value" is not a valid rule.
+[Method: POST, Route: tarif/create]
+in SYSTEMPATH\Validation\Validation.php on line 354.
+ 1 SYSTEMPATH\Validation\Validation.php(354): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_value')
+ 2 SYSTEMPATH\Validation\Validation.php(210): CodeIgniter\Validation\Validation->processRules('montant_frais', 'montant_frais', '0', [...], [...], 'montant_frais')
+ 3 SYSTEMPATH\BaseModel.php(1615): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(868): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\TarifController.php(66): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\TarifController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+ERROR - 2026-07-20 13:07:04 --> no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:07:04\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:07:04\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:07:04\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:07:04 --> CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+[Method: POST, Route: prefixe/update/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:07:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 174.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:07:04\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:07:04\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:07:04 --> [Caused by] Exception: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:07:04\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:07:04\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:07:04\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+ERROR - 2026-07-20 13:08:07 --> no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:07\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:07\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:07\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:08:07 --> CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+[Method: POST, Route: prefixe/update/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:08:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 174.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:07\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:07\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:08:07 --> [Caused by] Exception: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:07\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:07\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:07\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+ERROR - 2026-07-20 13:08:51 --> no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:51\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:51\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:51\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:08:51 --> CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+[Method: POST, Route: prefixe/update/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:08:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 174.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:51\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:51\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:08:51 --> [Caused by] Exception: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:51\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:51\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'2\', `updated_at` = \'2026-07-20 13:08:51\'
+WHERE `prefixe`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+DEBUG - 2026-07-20 13:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 13:10:16 --> Error: Call to undefined function set_value()
+[Method: GET, Route: operateur/new]
+in APPPATH\Views\operateur\form.php on line 19.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('operateur/form', [], true)
+ 4 APPPATH\Controllers\OperateurController.php(25): view('operateur/form')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\OperateurController->new()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+DEBUG - 2026-07-20 13:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 13:13:53 --> table operateur has no column named date_creation
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:13:53\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:13:53\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:13:53\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (:libelle:, :date_creation:)', [...], false)
+ 5 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OperateurController.php(32): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\OperateurController->create()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:13:53 --> CodeIgniter\Database\Exceptions\DatabaseException: table operateur has no column named date_creation
+[Method: POST, Route: operateur/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (:libelle:, :date_creation:)', [...], false)
+ 2 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\OperateurController.php(32): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\OperateurController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:13:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: table operateur has no column named date_creation
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 174.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:13:53\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:13:53\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (:libelle:, :date_creation:)', [...], false)
+ 4 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\OperateurController.php(32): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\OperateurController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:13:53 --> [Caused by] Exception: table operateur has no column named date_creation
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:13:53\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:13:53\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:13:53\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (:libelle:, :date_creation:)', [...], false)
+ 5 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OperateurController.php(32): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\OperateurController->create()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+DEBUG - 2026-07-20 13:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 13:14:56 --> table operateur has no column named date_creation
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:14:56\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:14:56\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:14:56\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (:libelle:, :date_creation:)', [...], false)
+ 5 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OperateurController.php(32): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\OperateurController->create()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:14:56 --> CodeIgniter\Database\Exceptions\DatabaseException: table operateur has no column named date_creation
+[Method: POST, Route: operateur/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (:libelle:, :date_creation:)', [...], false)
+ 2 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\OperateurController.php(32): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\OperateurController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:14:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: table operateur has no column named date_creation
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 174.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:14:56\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:14:56\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (:libelle:, :date_creation:)', [...], false)
+ 4 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\OperateurController.php(32): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\OperateurController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:14:56 --> [Caused by] Exception: table operateur has no column named date_creation
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:14:56\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:14:56\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (\'BIP\', \'2026-07-20 13:14:56\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `operateur` (`libelle`, `date_creation`) VALUES (:libelle:, :date_creation:)', [...], false)
+ 5 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\OperateurController.php(32): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\OperateurController->create()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperateurController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+DEBUG - 2026-07-20 13:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 13:28:40 --> no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 13:28:40\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 13:28:40\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 13:28:40\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:28:40 --> CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+[Method: POST, Route: prefixe/update/5]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:28:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 174.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 13:28:40\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 13:28:40\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:28:40 --> [Caused by] Exception: no such column: updated_at
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 163.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(163): SQLite3->exec('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 13:28:40\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 13:28:40\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `prefixe` SET `id_operateur` = \'1\', `updated_at` = \'2026-07-20 13:28:40\'
+WHERE `prefixe`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `prefixe` SET `id_operateur` = :id_operateur:, `updated_at` = :updated_at:
+WHERE `prefixe`.`id` IN :prefixe.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PrefixeController.php(58): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->update('5')
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+DEBUG - 2026-07-20 13:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-07-20 13:43:40 --> Unable to prepare statement: 1, no such column: libelle
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 164.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(164): SQLite3->query('SELECT 1
+FROM `prefixe`
+WHERE `libelle` = \'261\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('SELECT 1
+FROM `prefixe`
+WHERE `libelle` = \'261\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `prefixe`
+WHERE `libelle` = \'261\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `prefixe`
+WHERE `libelle` = :libelle:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('261', 'prefixe.libelle,id,{id}', [...])
+ 7 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\StrictRules\Rules->is_unique('261', 'prefixe.libelle,id,{id}', [...], null, 'prefixe')
+ 8 SYSTEMPATH\Validation\Validation.php(210): CodeIgniter\Validation\Validation->processRules('prefixe', 'prefixe', '261', [...], [...], 'prefixe')
+ 9 SYSTEMPATH\BaseModel.php(1615): CodeIgniter\Validation\Validation->run([...], null, null)
+10 SYSTEMPATH\BaseModel.php(868): CodeIgniter\BaseModel->validate([...])
+11 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+12 APPPATH\Controllers\PrefixeController.php(40): CodeIgniter\Model->insert([...])
+13 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->create()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:43:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 1, no such column: libelle
+[Method: POST, Route: prefixe/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `prefixe`
+WHERE `libelle` = :libelle:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('261', 'prefixe.libelle,id,{id}', [...])
+ 4 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\StrictRules\Rules->is_unique('261', 'prefixe.libelle,id,{id}', [...], null, 'prefixe')
+ 5 SYSTEMPATH\Validation\Validation.php(210): CodeIgniter\Validation\Validation->processRules('prefixe', 'prefixe', '261', [...], [...], 'prefixe')
+ 6 SYSTEMPATH\BaseModel.php(1615): CodeIgniter\Validation\Validation->run([...], null, null)
+ 7 SYSTEMPATH\BaseModel.php(868): CodeIgniter\BaseModel->validate([...])
+ 8 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\PrefixeController.php(40): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->create()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:43:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unable to prepare statement: 1, no such column: libelle
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 174.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('SELECT 1
+FROM `prefixe`
+WHERE `libelle` = \'261\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `prefixe`
+WHERE `libelle` = \'261\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `prefixe`
+WHERE `libelle` = :libelle:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('261', 'prefixe.libelle,id,{id}', [...])
+ 6 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\StrictRules\Rules->is_unique('261', 'prefixe.libelle,id,{id}', [...], null, 'prefixe')
+ 7 SYSTEMPATH\Validation\Validation.php(210): CodeIgniter\Validation\Validation->processRules('prefixe', 'prefixe', '261', [...], [...], 'prefixe')
+ 8 SYSTEMPATH\BaseModel.php(1615): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(868): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+11 APPPATH\Controllers\PrefixeController.php(40): CodeIgniter\Model->insert([...])
+12 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->create()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:43:40 --> [Caused by] Exception: Unable to prepare statement: 1, no such column: libelle
+in SYSTEMPATH\Database\SQLite3\Connection.php on line 164.
+ 1 SYSTEMPATH\Database\SQLite3\Connection.php(164): SQLite3->query('SELECT 1
+FROM `prefixe`
+WHERE `libelle` = \'261\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\SQLite3\Connection->execute('SELECT 1
+FROM `prefixe`
+WHERE `libelle` = \'261\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `prefixe`
+WHERE `libelle` = \'261\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `prefixe`
+WHERE `libelle` = :libelle:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('261', 'prefixe.libelle,id,{id}', [...])
+ 7 SYSTEMPATH\Validation\Validation.php(345): CodeIgniter\Validation\StrictRules\Rules->is_unique('261', 'prefixe.libelle,id,{id}', [...], null, 'prefixe')
+ 8 SYSTEMPATH\Validation\Validation.php(210): CodeIgniter\Validation\Validation->processRules('prefixe', 'prefixe', '261', [...], [...], 'prefixe')
+ 9 SYSTEMPATH\BaseModel.php(1615): CodeIgniter\Validation\Validation->run([...], null, null)
+10 SYSTEMPATH\BaseModel.php(868): CodeIgniter\BaseModel->validate([...])
+11 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+12 APPPATH\Controllers\PrefixeController.php(40): CodeIgniter\Model->insert([...])
+13 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PrefixeController->create()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrefixeController))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+DEBUG - 2026-07-20 13:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 13:46:29 --> CodeIgniter\Validation\Exceptions\ValidationException: "min_value" is not a valid rule.
+[Method: POST, Route: tarif/update/1]
+in SYSTEMPATH\Validation\Validation.php on line 354.
+ 1 SYSTEMPATH\Validation\Validation.php(354): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('min_value')
+ 2 SYSTEMPATH\Validation\Validation.php(210): CodeIgniter\Validation\Validation->processRules('montant_frais', 'montant_frais', '0', [...], [...], 'montant_frais')
+ 3 SYSTEMPATH\BaseModel.php(1615): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(1046): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 6 APPPATH\Controllers\TarifController.php(107): CodeIgniter\Model->update('1', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\TarifController->update('1')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+DEBUG - 2026-07-20 13:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-20 13:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-20 13:51:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "rapport/comptes.php"
+[Method: GET, Route: rapport/comptes]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('rapport/comptes.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('rapport/comptes', [], true)
+ 3 APPPATH\Controllers\RapportController.php(80): view('rapport/comptes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\RapportController->comptesClients()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RapportController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:52:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "rapport/comptes.php"
+[Method: GET, Route: rapport/compte]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('rapport/comptes.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('rapport/comptes', [], true)
+ 3 APPPATH\Controllers\RapportController.php(80): view('rapport/comptes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\RapportController->comptesClients()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RapportController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:52:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "rapport/comptes.php"
+[Method: GET, Route: rapport/compte]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('rapport/comptes.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('rapport/comptes', [], true)
+ 3 APPPATH\Controllers\RapportController.php(80): view('rapport/comptes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\RapportController->comptesClients()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RapportController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:53:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "rapport/comptes.php"
+[Method: GET, Route: rapport/compte]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('rapport/comptes.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('rapport/comptes', [], true)
+ 3 APPPATH\Controllers\RapportController.php(80): view('rapport/comptes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\RapportController->comptesClients()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RapportController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')
+CRITICAL - 2026-07-20 13:53:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "rapport/comptes.php"
+[Method: GET, Route: rapport/compte]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('rapport/comptes.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('rapport/comptes', [], true)
+ 3 APPPATH\Controllers\RapportController.php(80): view('rapport/comptes', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\RapportController->comptesClients()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RapportController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\ROJO\\MobileMoney\\public\\index.php')

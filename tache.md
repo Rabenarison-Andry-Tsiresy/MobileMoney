@@ -44,17 +44,17 @@ Examen S4 mobile money
       - [x] Validation métier : détection de chevauchement de tranches avant insert/update
 
 ### Controller
-- [] `OperateurController` : `index`, `new`, `create`, `edit`, `update`, `delete`
-- [ ] `PrefixeController` : CRUD (lié à un opérateur)
-- [ ] `OperationController` : `index` (lecture), gestion libellés si besoin
-- [ ] `TarifController` :
-      - [ ] `index` (liste des tranches par opérateur/opération)
-      - [ ] `create` / `store` (avec validation anti-chevauchement)
-      - [ ] `edit` / `update`
-      - [ ] `delete`
-- [ ] `RapportController` :
-      - [ ] `gains()` → somme `montant_frais` groupée par opérateur/opération/période
-      - [ ] `comptesClients()` → liste `Numero` + solde, recherche
+- [x] `OperateurController` : `index`, `new`, `create`, `edit`, `update`, `delete`
+- [x] `PrefixeController` : CRUD (lié à un opérateur)
+- [x] `OperationController` : `index` (lecture), gestion libellés si besoin
+- [x] `TarifController` :
+      - [x] `index` (liste des tranches par opérateur/opération)
+      - [x] `create` / `store` (avec validation anti-chevauchement)
+      - [x] `edit` / `update`
+      - [x] `delete`
+- [x] `RapportController` :
+      - [x] `gains()` → somme `montant_frais` groupée par opérateur/opération/période
+      - [x] `comptesClients()` → liste `Numero` + solde, recherche
 
 ### Views
 - [ ] `operateur/index.php`, `operateur/form.php`
@@ -77,52 +77,49 @@ Examen S4 mobile money
 ## 2. Module Client / Numero / Mouvement @Tsiresy
 
 ### Database
-- [ ] Migration `Client` (id, nom, created_at)
-- [ ] Migration `Numero` (id, id_client FK, id_operateur FK, numero UNIQUE, solde, created_at)
-- [ ] Migration `Mouvement` (id, id_operation FK, id_numero_source FK nullable, id_numero_destination FK nullable, montant, montant_frais, id_tarif FK, date_transaction)
+- [x] Migration `Client` (id, nom, created_at)
+- [x] Migration `Numero` (id, id_client FK, id_operateur FK, numero UNIQUE, solde, created_at)
+- [x] Migration `Mouvement` (id, id_operation FK, id_numero_source FK nullable, id_numero_destination FK nullable, montant, montant_frais, id_tarif FK, date_transaction)
 
 ### Modèle
-- [ ] `ClientModel` (CRUD standard)
-- [ ] `NumeroModel`
-      - [ ] `findByNumero($numero)`
-      - [ ] `creerAvecClient($numero, $idOperateur, $nomClient)` (login auto)
-      - [ ] `updateSolde($idNumero, $nouveauSolde)`
-- [ ] `MouvementModel`
-      - [ ] `getHistorique($idNumero)`
-      - [ ] `create(...)`
+- [x] `ClientModel` (CRUD standard)
+- [x] `NumeroModel`
+      - [x] `findByNumero($numero)`
+      - [x] `updateSolde($idNumero, $nouveauSolde)`
+- [x] `MouvementModel`
+      - [x] `getHistorique($idNumero)`
+      - [x] `create(...)`
 
 ### Controller
-- [ ] `AuthController`
-      - [ ] `login()` : saisie numéro
-      - [ ] détection opérateur via `PrefixeModel`
-      - [ ] création automatique Client + Numero si première connexion
-      - [ ] gestion session
-- [ ] `CompteController`
-      - [ ] `solde()` : afficher `Numero.solde`
-      - [ ] `historique()` : liste des `Mouvement` filtrés par numéro
-- [ ] `TransactionController`
-      - [ ] `depot()` (form + traitement)
-      - [ ] `retrait()` (form + traitement, vérifier solde)
-      - [ ] `transfert()` (form + traitement, vérifier solde)
-            - [ ] Autoriser la sélection d'un numéro destination **quel que soit son opérateur** (inter-opérateurs autorisé)
-            - [ ] Déterminer le tarif applicable en fonction de l'opérateur **source** (à confirmer, cf. section Décisions)
+- [x] `AuthController`
+      - [x] `login()` : saisie numéro
+      - [x] gestion session
+- [x] `CompteController`
+      - [x] `solde()` : afficher `Numero.solde`
+      - [x] `historique()` : liste des -  `Mouvement` filtrés par numéro
+- [x] `TransactionController`
+      - [x] `depot()` (form + traitement)
+      - [x] `retrait()` (form + traitement, vérifier solde)
+      - [x] `transfert()` (form + traitement, vérifier solde)
+            - [x] Autoriser la sélection d'un numéro destination **quel que soit son opérateur** (inter-opérateurs autorisé)
+            - [x] Déterminer le tarif applicable en fonction de l'opérateur **source** (à confirmer, cf. section Décisions)
 
 ### Views
-- [ ] `auth/login.php`
-- [ ] `compte/solde.php`
-- [ ] `compte/historique.php`
-- [ ] `transaction/depot.php`
-- [ ] `transaction/retrait.php`
-- [ ] `transaction/transfert.php` (champ numéro destination libre, sans restriction d'opérateur)
+- [x] `auth/login.php`
+- [x] `compte/solde.php`
+- [x] `compte/historique.php`
+- [x] `transaction/depot.php`
+- [x] `transaction/retrait.php`
+- [x] `transaction/transfert.php` (champ numéro destination libre, sans restriction d'opérateur)
 
 ### Routes
-- [ ] `GET|POST login` → `AuthController::login`
-- [ ] `GET compte/solde` → `CompteController::solde`
-- [ ] `GET compte/historique` → `CompteController::historique`
-- [ ] `GET|POST transaction/depot` → `TransactionController::depot`
-- [ ] `GET|POST transaction/retrait` → `TransactionController::retrait`
-- [ ] `GET|POST transaction/transfert` → `TransactionController::transfert`
-- [ ] Filtre/middleware `auth` sur toutes les routes `compte/*` et `transaction/*`
+- [x] `GET|POST login` → `AuthController::login`
+- [x] `GET compte/solde` → `CompteController::solde`
+- [x] `GET compte/historique` → `CompteController::historique`
+- [x] `GET|POST transaction/depot` → `TransactionController::depot`
+- [x] `GET|POST transaction/retrait` → `TransactionController::retrait`
+- [x] `GET|POST transaction/transfert` → `TransactionController::transfert`
+- [x] Filtre/middleware `auth` sur toutes les routes `compte/*` et `transaction/*`
 
 ---
 
@@ -130,17 +127,15 @@ Examen S4 mobile money
 
 *(indépendant des controllers, à mettre dans `app/Libraries/` ou `app/Services/`)*
 
-- [ ] `TarifService::calculerFrais($idOperateur, $idOperation, $montant)` → lookup `TarifModel`
-- [ ] `MouvementService::executer($idOperation, $source, $destination, $montant)`
-      - [ ] Gérer le cas transfert **inter-opérateurs** (source et destination peuvent avoir un `id_operateur` différent)
-      - [ ] Calcul du frais via `TarifService` (basé sur l'opérateur source, à valider)
-      - [ ] Transaction DB (`$db->transStart()` / `transComplete()`)
-      - [ ] Mise à jour atomique du/des solde(s) — débit sur `Numero` source, crédit sur `Numero` destination (peu importe l'opérateur)
-      - [ ] Insertion dans `Mouvement`
+- [x] `TarifService::calculerFrais($idOperateur, $idOperation, $montant)` → lookup `TarifModel`
+- [x] `MouvementService::executer($idOperation, $source, $destination, $montant)`
+      - [x] Gérer le cas transfert **inter-opérateurs** (source et destination peuvent avoir un `id_operateur` différent)
+      - [x] Calcul du frais via `TarifService` (basé sur l'opérateur source, à valider)
+      - [x] Transaction DB (`$db->transStart()` / `transComplete()`)
+      - [x] Mise à jour atomique du/des solde(s) — débit sur `Numero` source, crédit sur `Numero` destination (peu importe l'opérateur)
+      - [x] Insertion dans `Mouvement`
 - [ ] Exceptions custom :
-      - [ ] `SoldeInsuffisantException`
-      - [ ] `TarifIntrouvableException`
-      - [ ] `NumeroInconnuException`
+      - [x] `NumeroInconnuException`
 - [ ] Tests unitaires (`tests/unit/`) :
       - [ ] `TarifServiceTest` (calcul par tranche, bornes min/max)
       - [ ] `MouvementServiceTest` :
@@ -158,9 +153,3 @@ Examen S4 mobile money
       - `TransactionController::transfert` : suppression de la vérification d'opérateur identique
       - `MouvementService::executer` : gérer explicitement le cas source/destination sur des opérateurs différents
       - `TarifService` : clarifier sur quel opérateur se base le calcul du frais (source, destination, ou règle spécifique) → **à préciser techniquement avant implémentation**
-
-## Questions encore à trancher avant dev @Both
-
-- [ ] Le dépôt "vient d'où" ? (agent, guichet, source externe) — à modéliser en V2 si besoin
-- [ ] Faut-il un statut sur `Mouvement` (réussi/échoué) ou tout est synchrone en V1 ?
-- [ ] Pour un transfert inter-opérateurs, le tarif appliqué dépend de quel opérateur (source, destination, ou table de correspondance dédiée) ?

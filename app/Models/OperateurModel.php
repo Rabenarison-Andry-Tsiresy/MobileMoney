@@ -6,27 +6,21 @@ use CodeIgniter\Model;
 
 class OperateurModel extends Model
 {
-    protected $table            = 'Operateur';
-    protected $primaryKey       = 'id';
-    protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
-
-    protected $allowedFields    = ['libelle'];
-
+    protected $table = 'operateur';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['libelle'];
     protected $useTimestamps = true;
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
+    protected $createdField = 'date_creation';
+    protected $updatedField = '';
 
-    // Validation
-    protected $validationRules      = [
+    protected $validationRules = [
         'libelle' => 'required|min_length[2]|max_length[100]|is_unique[operateur.libelle,id,{id}]'
     ];
 
-    protected $validationMessages   = [
+    protected $validationMessages = [
         'libelle' => [
-            'required'   => 'Le libellé est obligatoire.',
-            'is_unique'  => 'Cet opérateur existe déjà.',
+            'required' => 'Le libellé est obligatoire.',
+            'is_unique' => 'Cet opérateur existe déjà.',
         ]
     ];
-
 }

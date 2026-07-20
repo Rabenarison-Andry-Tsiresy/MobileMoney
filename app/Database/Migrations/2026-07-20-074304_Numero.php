@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateTarifTable extends Migration
+class Numero extends Migration
 {
     public function up()
     {
@@ -15,7 +15,13 @@ class CreateTarifTable extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
-            'id_operation' => [
+            'numero' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '20',
+                'unique'     => true,
+                'null'       => false,
+            ],
+            'id_client' => [
                 'type'       => 'INT',
                 'constraint' => 11,
                 'unsigned'   => true,
@@ -27,33 +33,31 @@ class CreateTarifTable extends Migration
                 'unsigned'   => true,
                 'null'       => false,
             ],
-            'montant_min' => [
+            'solde' => [
                 'type'       => 'DECIMAL',
                 'constraint' => '15,2',
+                'default'    => 0,
                 'null'       => false,
             ],
-            'montant_max' => [
-                'type'       => 'DECIMAL',
-                'constraint' => '15,2',
-                'null'       => false,
-            ],
-            'montant_frais' => [
-                'type'       => 'DECIMAL',
-                'constraint' => '15,2',
-                'null'       => false,
+            'date_creation' => [
+                'type'    => 'DATETIME',
+                'null'    => false,
+                'default' => date('Y-m-d H:i:s'),
             ],
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->addForeignKey('id_operation', 'operation', 'id', 'CASCADE', 'CASCADE');
+        $this->forge->addForeignKey('id_client', 'client', 'id', 'CASCADE', 'CASCADE');
         $this->forge->addForeignKey('id_operateur', 'operateur', 'id', 'CASCADE', 'CASCADE');
-        $this->forge->createTable('tarif');
+        $this->forge->createTable('numero');
         
         // Index pour SQLite
-        $this->db->query('CREATE INDEX IF NOT EXISTS idx_tarif_lookup ON tarif (id_operateur, id_operation, montant_min, montant_max)');
+        $this->db->query('CREATE INDEX IF NOT EXISTS idx_numero_client ON numero (id_client)');
+        $this->db->query('CREATE INDEX IF NOT EXISTS idx_numero_operateur ON numero (id_operateur)');
+        $this->db->query('CREATE INDEX IF NOT EXISTS idx_numero_numero ON numero (numero)');
     }
 
     public function down()
     {
-        $this->forge->dropTable('tarif');
+        $this->forge->dropTable('numero');
     }
 }

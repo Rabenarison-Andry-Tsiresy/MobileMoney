@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateOperationtable extends Migration
+class Client extends Migration
 {
     public function up()
     {
@@ -15,19 +15,23 @@ class CreateOperationtable extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
-            'libelle' => [
+            'nom' => [
                 'type'       => 'VARCHAR',
-                'constraint' => '50',
+                'constraint' => '100',
                 'null'       => false,
-                'unique'     => true,
+            ],
+            'date_creation' => [
+                'type'    => 'DATETIME',
+                'null'    => false,
+                'default' => date('Y-m-d H:i:s'),
             ],
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->createTable('operation');
+        $this->forge->createTable('client');
     }
 
     public function down()
     {
-        $this->forge->dropTable('operation');
+        $this->forge->dropTable('client');
     }
 }

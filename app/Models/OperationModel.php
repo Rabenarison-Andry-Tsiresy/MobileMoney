@@ -4,27 +4,21 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class OperateurModel extends Model
+class OperationModel extends Model
 {
-    protected $table            = 'Operation';
-    protected $primaryKey       = 'id';
-    protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
-
-    protected $allowedFields    = ['libelle'];
-
+    protected $table = 'operation';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['libelle'];
     protected $useTimestamps = false;
 
-    // Validation
-    protected $validationRules      = [
+    protected $validationRules = [
         'libelle' => 'required|min_length[2]|max_length[100]|is_unique[operation.libelle,id,{id}]'
     ];
 
-    protected $validationMessages   = [
+    protected $validationMessages = [
         'libelle' => [
-            'required'   => 'Le libellé est obligatoire.',
-            'is_unique'  => 'Cet opérateur existe déjà.',
+            'required' => 'Le libellé est obligatoire.',
+            'is_unique' => 'Cette opération existe déjà.',
         ]
     ];
-
 }
