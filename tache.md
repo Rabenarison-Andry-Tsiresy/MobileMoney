@@ -57,12 +57,12 @@ Examen S4 mobile money
       - [x] `comptesClients()` → liste `Numero` + solde, recherche
 
 ### Views
-- [ ] `operateur/index.php`, `operateur/form.php`
-- [ ] `prefixe/index.php`, `prefixe/form.php`
-- [ ] `operation/index.php`
-- [ ] `tarif/index.php` (tableau des tranches), `tarif/form.php`
-- [ ] `rapport/gains.php`
-- [ ] `rapport/comptes.php`
+- [x] `operateur/index.php`, `operateur/form.php`
+- [x] `prefixe/index.php`, `prefixe/form.php`
+- [x] `operation/index.php`
+- [x] `tarif/index.php` (tableau des tranches), `tarif/form.php`
+- [x] `rapport/gains.php`
+- [x] `rapport/comptes.php`
 
 ### Routes
 - [ ] `resource('operateur', ['controller' => 'OperateurController'])`
@@ -71,7 +71,21 @@ Examen S4 mobile money
 - [ ] `resource('tarif', ['controller' => 'TarifController'])`
 - [ ] `GET rapport/gains` → `RapportController::gains`
 - [ ] `GET rapport/comptes` → `RapportController::comptesClients`
+[ ] Routes Admin (GET `/admin/login`, POST `/admin/auth`, GET `/admin/logout`)
 
+### Sécurité & Authentification (Nouveau)
+- [ ] Créer la migration `Admin` (id, username, password)
+- [ ] Créer `AdminSeeder` (pour insérer un admin par défaut ex: admin / admin123)
+- [ ] Créer `AdminModel`
+- [ ] Créer `AdminController` (login, authentification, logout)
+- [ ] Créer la vue `admin/login.php` (sans navbar)
+- [ ] Créer un Filtre `AdminFilter` pour protéger les routes.
+- [ ] Appliquer le Filtre dans `app/Config/Filters.php` sur toutes les routes de ton module.
+
+
+### UI & Navigation (Nouveau)
+- [ ] Créer `app/Views/layouts/admin.php` (Template Bootstrap 5 Thème sombre + Navbar)
+- [ ] Nettoyer toutes les vues (Operateur, Prefixe, Tarif, Rapport) pour utiliser `<?= $this->extend('layouts/admin') ?>`
 ---
 
 ## 2. Module Client / Numero / Mouvement @Tsiresy
