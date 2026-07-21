@@ -95,7 +95,7 @@ Examen S4 mobile money
 - [x] Créer `AdminSeeder` (pour insérer un admin par défaut ex: admin / admin123)
 - [x] Créer `AdminModel`
 - [x] Créer `AdminController` (login, authentification, logout)
-- [ ] Créer la vue `admin/login.php` (sans navbar)
+- [x] Créer la vue `admin/login.php` (sans navbar)
 - [ ] Créer un Filtre `AdminFilter` pour protéger les routes.
 - [ ] Appliquer le Filtre dans `app/Config/Filters.php` sur toutes les routes de ton module.
 
