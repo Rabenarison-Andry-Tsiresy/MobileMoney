@@ -94,7 +94,7 @@ Examen S4 mobile money
 - [x] Créer la migration `Admin` (id, username, password)
 - [x] Créer `AdminSeeder` (pour insérer un admin par défaut ex: admin / admin123)
 - [x] Créer `AdminModel`
-- [ ] Créer `AdminController` (login, authentification, logout)
+- [x] Créer `AdminController` (login, authentification, logout)
 - [ ] Créer la vue `admin/login.php` (sans navbar)
 - [ ] Créer un Filtre `AdminFilter` pour protéger les routes.
 - [ ] Appliquer le Filtre dans `app/Config/Filters.php` sur toutes les routes de ton module.
