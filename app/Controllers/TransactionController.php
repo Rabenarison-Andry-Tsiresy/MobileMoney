@@ -6,6 +6,7 @@ use App\Models\NumeroModel;
 use App\Models\MouvementModel;
 use App\Models\TarifModel;
 use App\Models\CommissionModel;
+use App\Models\PrefixeModel;
 
 class TransactionController extends BaseController
 {
@@ -125,6 +126,8 @@ class TransactionController extends BaseController
         $tarifsTransfert = [];
         $tarifsRetrait = [];
         $commissions = [];
+        $idOperateurSource = $sourceData['id_operateur'] ?? null;
+
         if ($sourceData) {
             $tarifModel = new TarifModel();
             $tarifsTransfert = $tarifModel->getTranchesByOperateurOperation($sourceData['id_operateur'], 3);
@@ -134,10 +137,19 @@ class TransactionController extends BaseController
             $commissions = $commissionModel->getCommissionsByOperateurDepart($sourceData['id_operateur']);
         }
 
+  
+        $prefixeModel = new PrefixeModel();
+        $prefixeToOperateur = [];
+        foreach ($prefixeModel->findAll() as $p) {
+            $prefixeToOperateur[$p['prefixe']] = (int) $p['id_operateur'];
+        }
+
         return view('Transaction/transfert', [
             'tarifsTransfert' => $tarifsTransfert,
             'tarifsRetrait' => $tarifsRetrait,
-            'commissions' => $commissions
+            'commissions' => $commissions,
+            'idOperateurSource' => $idOperateurSource,
+            'prefixeToOperateur' => $prefixeToOperateur
         ]);
     }
 

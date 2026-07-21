@@ -224,6 +224,12 @@
             <span>🔴 Airtel</span>
             <span>🔵 Telma</span>
         </div>
+
+        <div style="text-align:center; margin-top:15px;">
+            <a href="<?= base_url('operateur') ?>" style="font-size:13px; color:#667eea; text-decoration:none;">
+                🛠️ Espace opérateur / administration
+            </a>
+        </div>
     </div>
 </body>
 </html>

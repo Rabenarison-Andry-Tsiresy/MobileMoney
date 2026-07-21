@@ -1,0 +1,4 @@
+CRITICAL - 2026-07-21 06:43:43 --> ErrorException: Cannot declare class App\Database\Migrations\CreateOperateurTable, because the name is already in use
+[Method: CLI, Route: migrate]
+in APPPATH/Database/Migrations/2026-07-20-074520_CreateOperateurTable.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

@@ -222,6 +222,8 @@ if ($numeroSource) {
         }
 
         const prefixeSource = '<?= $prefixeSource ?? "" ?>';
+        const idOperateurSource = <?= json_encode($idOperateurSource ?? null) ?>;
+        const prefixeToOperateur = <?= json_encode($prefixeToOperateur ?? []) ?>;
 
         function updateFraisInfo() {
             const mode = document.getElementById('mode').value;
@@ -245,14 +247,21 @@ if ($numeroSource) {
             const memeOperateur = prefixeSource && prefixDest === prefixeSource;
 
             if (!memeOperateur) {
+                // Les commissions sont indexées par id_operateur (pas par préfixe) :
+                // on convertit le préfixe du destinataire en id_operateur via la carte
+                // transmise par le contrôleur.
+                const idOperateurDest = prefixeToOperateur[prefixDest] ?? null;
+
                 const commissionsData = <?= json_encode($commissions ?? []) ?>;
                 let commission = 0;
                 let pourcentage = 0;
-                for (const c of commissionsData) {
-                    if (c.id_operateur_depart == prefixeSource && c.id_operateur_arrivee == prefixDest) {
-                        pourcentage = parseFloat(c.pourcentage);
-                        commission = montant * (pourcentage / 100);
-                        break;
+                if (idOperateurSource !== null && idOperateurDest !== null) {
+                    for (const c of commissionsData) {
+                        if (parseInt(c.id_operateur_depart) === idOperateurSource && parseInt(c.id_operateur_arrivee) === idOperateurDest) {
+                            pourcentage = parseFloat(c.pourcentage);
+                            commission = montant * (pourcentage / 100);
+                            break;
+                        }
                     }
                 }
                 
