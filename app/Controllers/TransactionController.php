@@ -7,6 +7,7 @@ use App\Models\MouvementModel;
 use App\Models\TarifModel;
 use App\Models\CommissionModel;
 use App\Models\PrefixeModel;
+use App\Models\EpargneModel;
 
 class TransactionController extends BaseController
 {
@@ -116,6 +117,7 @@ class TransactionController extends BaseController
     public function transfert()
     {
         $numero = session()->get('numero');
+    
 
         if (!$numero) {
             return redirect()->to('/Authentification/login')->with('error', 'Veuillez vous connecter');
@@ -175,11 +177,23 @@ class TransactionController extends BaseController
     // TRANSFERT SIMPLE
     // ============================================
     private function transfertSimple($numeroSource)
-    {
+    {   
+        $numeroModel = new NumeroModel();
+        $epargnemodel = new EpargneModel();
         $numeroDestinataire = $this->request->getPost('numero_destinataire');
+        $id_numeroDestinataire = $numeroModel->find($numeroDestinataire);
         $montant = $this->request->getPost('montant');
         $inclureFrais = $this->request->getPost('inclure_frais') === '1' || $this->request->getPost('inclure_frais') === 'on';
+        $pourcentage = $this->request->getPost('epargne');
 
+        if($pourcentage != 0  || $pourcentage != null){
+            $montantaepargner = ($montant*$pourcentage)/100;
+            $eparge = $epargnemodel->getEpargne($id_numeroDestinataire['id']);
+            $epargnemodel->updateSoldeEpargne($eparge['id'],$montantaepargner);
+        }
+        else{
+            $montantaepargner = 0;
+        }
         if (!$numeroDestinataire || !$montant || $montant <= 0) {
             return redirect()->back()->with('error', 'Tous les champs sont obligatoires');
         }
@@ -188,7 +202,7 @@ class TransactionController extends BaseController
             return redirect()->back()->with('error', 'Vous ne pouvez pas vous transférer à vous-même');
         }
 
-        $numeroModel = new NumeroModel();
+        
         
         $sourceData = $numeroModel->findByNumero($numeroSource);
         if (!$sourceData) {
@@ -243,7 +257,7 @@ class TransactionController extends BaseController
             $sourceData['id'],
             $destData['id'],
             $montant,
-            $fraisTransfert + $commission,
+            $fraisTransfert + $commission - $montantaepargner,
             $memeOperateur && $fraisTransfert > 0 ? ($tarifTransfert ? $tarifTransfert['id'] : null) : null
         );
         

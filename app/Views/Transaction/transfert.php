@@ -112,7 +112,7 @@ if ($numeroSource) {
                  
                  <label>Montant (Ar)</label>
                  <input type="number" name="montant" placeholder="Ex: 5000" required min="1" id="montantTransfert" onchange="updateFraisInfo()" onkeyup="updateFraisInfo()">
-                 
+                 <input type="text" name="eparge" placeholder="Pourcentage a epargner">
                  <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-weight: normal;">
                      <input type="checkbox" name="inclure_frais" id="inclureFrais" style="width: auto;" onchange="updateFraisInfo()">
                      Inclure les frais de retrait dans le montant envoyé
