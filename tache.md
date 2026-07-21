@@ -96,8 +96,8 @@ Examen S4 mobile money
 - [x] Créer `AdminModel`
 - [x] Créer `AdminController` (login, authentification, logout)
 - [x] Créer la vue `admin/login.php` (sans navbar)
-- [ ] Créer un Filtre `AdminFilter` pour protéger les routes.
-- [ ] Appliquer le Filtre dans `app/Config/Filters.php` sur toutes les routes de ton module.
+- [x] Créer un Filtre `AdminFilter` pour protéger les routes.
+- [x] Appliquer le Filtre dans `app/Config/Filters.php` sur toutes les routes de ton module.
 
 ### UI & Navigation (Nouveau)
 - [ ] Créer `app/Views/layouts/admin.php` (Template Bootstrap 5 Thème sombre + Navbar)
