@@ -7,10 +7,10 @@
     <h2>Situation des Comptes Clients</h2>
 
     <!-- Formulaire de recherche -->
-    <form action="<?= base_url('rapport/comptes') ?>" method="get" class="mb-4 d-flex">
+    <form action="<?= base_url('rapport/compte') ?>" method="get" class="mb-4 d-flex">
         <input type="text" name="search" class="form-control me-2" placeholder="Rechercher un nom ou un numéro..." value="<?= isset($recherche) ? $recherche : '' ?>">
         <button type="submit" class="btn btn-primary">Rechercher</button>
-        <a href="<?= base_url('rapport/comptes') ?>" class="btn btn-secondary ms-2">Réinitialiser</a>
+        <a href="<?= base_url('rapport/compte') ?>" class="btn btn-secondary ms-2">Réinitialiser</a>
     </form>
 
     <table class="table table-bordered">
