@@ -58,58 +58,26 @@ Examen S4 mobile money
       - [x] Validation métier : détection de chevauchement de tranches avant insert/update
 
 ### Controller
-- [] `OperateurController` : `index`, `new`, `create`, `edit`, `update`, `delete`
-- [ ] `PrefixeController` : CRUD (lié à un opérateur)
-- [ ] `OperationController` : `index` (lecture), gestion libellés si besoin
-- [ ] `TarifController` :
-      - [ ] `index` (liste des tranches par opérateur/opération)
-      - [ ] `create` / `store` (avec validation anti-chevauchement)
-      - [ ] `edit` / `update`
-      - [ ] `delete`
-- [ ] `RapportController` :
-      - [ ] `gains()` → somme `montant_frais` groupée par opérateur/opération/période
-      - [ ] `comptesClients()` → liste `Numero` + solde, recherche
-
-- [ ]  Migration `Operateur` (id, libelle)
-- [ ]  Migration `Prefixe` (id, id_operateur FK, prefixe UNIQUE)
-- [ ]  Migration `Operation` (id, libelle)
-- [ ]  Migration `Tarif` (id, id_operateur FK, id_operation FK, montant_min, montant_max, montant_frais)
-- [ ]  Seeder `OperationSeeder` (depot, retrait, transfert)
-- [ ]  Seeder `OperateurSeeder` + `PrefixeSeeder` (opérateurs + préfixes de test)
-- [ ]  Seeder `TarifSeeder` (barème de test par tranche)
-
-### Modèle
-
-- [ ]  `OperateurModel` (CRUD standard)
-- [ ]  `PrefixeModel` (méthode `findOperateurByPrefixe($prefixe)`)
-- [ ]  `OperationModel` (CRUD standard, lecture seule côté front normalement)
-- [ ]  `TarifModel`
-  - [ ]  `getTranchesByOperateurOperation($idOperateur, $idOperation)`
-  - [ ]  `findTarifApplicable($idOperateur, $idOperation, $montant)`
-  - [ ]  Validation métier : détection de chevauchement de tranches avant insert/update
-
-### Controller
-
-- [ ]  `OperateurController` : `index`, `new`, `create`, `edit`, `update`, `delete`
-- [ ]  `PrefixeController` : CRUD (lié à un opérateur)
-- [ ]  `OperationController` : `index` (lecture), gestion libellés si besoin
-- [ ]  `TarifController` :
-  - [ ]  `index` (liste des tranches par opérateur/opération)
-  - [ ]  `create` / `store` (avec validation anti-chevauchement)
-  - [ ]  `edit` / `update`
-  - [ ]  `delete`
-- [ ]  `RapportController` :
-  - [ ]  `gains()` → somme `montant_frais` groupée par opérateur/opération/période
-  - [ ]  `comptesClients()` → liste `Numero` + solde, recherche
+- [x] `OperateurController` : `index`, `new`, `create`, `edit`, `update`, `delete`
+- [x] `PrefixeController` : CRUD (lié à un opérateur)
+- [x] `OperationController` : `index` (lecture), gestion libellés si besoin
+- [x] `TarifController` :
+      - [x] `index` (liste des tranches par opérateur/opération)
+      - [x] `create` / `store` (avec validation anti-chevauchement)
+      - [x] `edit` / `update`
+      - [x] `delete`
+- [x] `RapportController` :
+      - [x] `gains()` → somme `montant_frais` groupée par opérateur/opération/période
+      - [x] `comptesClients()` → liste `Numero` + solde, recherche
 
 ### Views
 
-- [ ]  `operateur/index.php`, `operateur/form.php`
-- [ ]  `prefixe/index.php`, `prefixe/form.php`
-- [ ]  `operation/index.php`
-- [ ]  `tarif/index.php` (tableau des tranches), `tarif/form.php`
-- [ ]  `rapport/gains.php`
-- [ ]  `rapport/comptes.php`
+- [x]  `operateur/index.php`, `operateur/form.php`
+- [x]  `prefixe/index.php`, `prefixe/form.php`
+- [x]  `operation/index.php`
+- [x]  `tarif/index.php` (tableau des tranches), `tarif/form.php`
+- [x]  `rapport/gains.php`
+- [x]  `rapport/comptes.php`
 
 ### Routes
 
@@ -121,6 +89,28 @@ Examen S4 mobile money
 - [ ]  `GET rapport/comptes` → `RapportController::comptesClients`
 
 ---
+**ESPACE ADMIN & CLIENT**
+### Sécurité & Authentification (Nouveau)
+- [x] Créer la migration `Admin` (id, username, password)
+- [x] Créer `AdminSeeder` (pour insérer un admin par défaut ex: admin / admin123)
+- [ ] Créer `AdminModel`
+- [ ] Créer `AdminController` (login, authentification, logout)
+- [ ] Créer la vue `admin/login.php` (sans navbar)
+- [ ] Créer un Filtre `AdminFilter` pour protéger les routes.
+- [ ] Appliquer le Filtre dans `app/Config/Filters.php` sur toutes les routes de ton module.
+
+### UI & Navigation (Nouveau)
+- [ ] Créer `app/Views/layouts/admin.php` (Template Bootstrap 5 Thème sombre + Navbar)
+- [ ] Nettoyer toutes les vues (Operateur, Prefixe, Tarif, Rapport) pour utiliser `<?= $this->extend('layouts/admin') ?>`
+
+### Routes (Checklist finale)
+- [x] Routes Opérateur
+- [x] Routes Préfixe
+- [x] Routes Opération
+- [x] Routes Tarif
+- [x] Routes Rapports
+- [ ] Routes Admin (GET `/admin/login`, POST `/admin/auth`, GET `/admin/logout`)
+
 
 ## 2. Module Client / Numero / Mouvement @Tsiresy
 
