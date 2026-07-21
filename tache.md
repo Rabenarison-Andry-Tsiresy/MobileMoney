@@ -99,7 +99,7 @@ Examen S4 mobile money
 - [x] Créer un Filtre `AdminFilter` pour protéger les routes.
 - [x] Appliquer le Filtre dans `app/Config/Filters.php` sur toutes les routes de ton module.
 
-### UI & Navigation (Nouveau)
+### UI & Navigation
 - [ ] Créer `app/Views/layouts/admin.php` (Template Bootstrap 5 Thème sombre + Navbar)
 - [ ] Nettoyer toutes les vues (Operateur, Prefixe, Tarif, Rapport) pour utiliser `<?= $this->extend('layouts/admin') ?>`
 
@@ -109,7 +109,7 @@ Examen S4 mobile money
 - [x] Routes Opération
 - [x] Routes Tarif
 - [x] Routes Rapports
-- [ ] Routes Admin (GET `/admin/login`, POST `/admin/auth`, GET `/admin/logout`)
+- [x] Routes Admin (GET `/admin/login`, POST `/admin/auth`, GET `/admin/logout`)
 
 
 ## 2. Module Client / Numero / Mouvement @Tsiresy
